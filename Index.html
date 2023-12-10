@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title> .: AVANCE DE PROYECTO :. </title>
+</head>
+<body>
+
+<div class="container">
+    <h2>REGISTRATE AQUI</h2>
+    <form id="registroForm" onsubmit="return validarFormulario()">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+
+        <!-- Aqui puse las opciones de discapacidad etc -->
+
+        <div class="form-group">
+            <label>A fin de considerar sus necesidades y atenderlas, requerimos saber si usted es una persona con:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="discapacidadAuditiva" name="discapacidad[]" value="auditiva">
+                <label class="form-check-label" for="discapacidadAuditiva">Discapacidad auditiva</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="discapacidadVisual" name="discapacidad[]" value="visual">
+                <label class="form-check-label" for="discapacidadVisual">Discapacidad visual</label>
+            </div>
+
+             <!--  si quieren que haya mas opciones y no este agrupada, descomentar este y borrar o comentar el otro
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="discapacidadMotRuedas" name="discapacidad[]" value="ruedas">
+                <label class="form-check-label" for="discapacidadMotRueda">Discapacidad motriz Usuaria De Sillas De Ruedas</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="discapacidadMotMul" name="discapacidad[]" value="muletas">
+                <label class="form-check-label" for="discapacidadMotMull">Discapacidad motriz Usuaria De Muletas</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="discapacidadBast" name="discapacidad[]" value="baston">
+                <label class="form-check-label" for="discapacidadMotBast">Discapacidad motriz Usuaria De Bastón</label>
+            </div>
+            
+            -->
+
+
+            <!-- Discapacidad motriz la que agrupe  -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="discapacidadMotriz" name="discapacidad[]" value="motriz">
+                <label class="form-check-label" for="discapacidadMotriz">Discapacidad motriz</label>
         
-    </body>
-    <script src="javascript.js"></script>
+                <!-- Opciones específicas de discapacidad motriz -->
+                <div id="opcionesMotriz" style="display: none;">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaRuedas" value="ruedas">
+                        <label class="form-check-label" for="usuariaRuedas">Usuaria De Sillas De Ruedas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaMuletas" value="muletas">
+                        <label class="form-check-label" for="usuariaMuletas">Usuaria De Muletas</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaBaston" value="baston">
+                        <label class="form-check-label" for="usuariaBaston">Usuaria De Bastón</label>
+                    </div>
+                   
+                </div>
+            </div>
+        
+            <!-- aqui puse el otra discapacidad -->
+        
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="otraDiscapacidad" name="discapacidad[]" value="otra">
+                <label class="form-check-label" for="otraDiscapacidad">Otra opción</label>
+                <input type="text" class="form-control" id="otraDiscapacidadText" name="otraDiscapacidad" placeholder="Especifica tu discapacidad" style="display: none;">
+            </div>
+        </div>
+        
+
+        <!-- Botones para registro y modificar  -->
+
+        <button type="submit" class="btn btn-primary">Registrar</button>
+        <button type="button" class="btn btn-secondary" onclick="modificarFormulario()">Modificar</button>
+    </form>
+</div>
+
+ <!-- jquery,boostrap y popper  -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
 </html>
+
+
+
+
+
