@@ -1,0 +1,22 @@
+*{
+    background-color: #814147;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+    background-color: #814147;
+    color: white;
+}
+
+.container{
+    border: 3px solid black; 
+    border-radius: 15px;
+    padding: 20px 5px 20px 5px;
+    background-color: #814147;
+}
+
+.formulario{
+    padding: 20px;
+    color: white;
+}
