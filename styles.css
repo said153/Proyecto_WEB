@@ -6,7 +6,6 @@
     text-align: center;
     padding: 20px;
     background-color: #7b2234;
-    /* color: white; */
 }
 
 h2{
@@ -20,21 +19,34 @@ h2{
 }
 
 legend{
-    color: black;
+    color: white;
     
 }
 
 fieldset{
+    border: 3px solid black;
     border-radius: 20px;
-    margin: 20px;
+    margin: 30px;
     padding: 20px;    
-    border-color: black;
 }
 
 label, p{
     font-size: 19px;
+    margin-top: 10px;
 }
 
 .form-check-input{
     font-size: 15;
+}
+
+input{
+    margin: 15px 0 15px 0;
+}
+
+.btn-primary{
+    margin-left: 44%;
+}
+
+.btn-secondary{
+    margin-left: 2%;
 }
