@@ -1,22 +1,40 @@
 *{
-    background-color: #814147;
+    background-color: #b35c65;
 }
 
 .titulo{
     text-align: center;
     padding: 20px;
-    background-color: #814147;
-    color: white;
+    background-color: #7b2234;
+    /* color: white; */
 }
 
-.container{
-    border: 3px solid black; 
-    border-radius: 15px;
-    padding: 20px 5px 20px 5px;
-    background-color: #814147;
+h2{
+    background-color: #7b2234;
+    color: white;
 }
 
 .formulario{
     padding: 20px;
-    color: white;
+    /* color: white; */
+}
+
+legend{
+    color: black;
+    
+}
+
+fieldset{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;    
+    border-color: black;
+}
+
+label, p{
+    font-size: 19px;
+}
+
+.form-check-input{
+    font-size: 15;
 }
