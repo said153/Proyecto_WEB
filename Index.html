@@ -14,17 +14,17 @@
                 <fieldset class="Identidad"> 
                     <legend>Identidad</legend>
                         <label for="boleta">Boleta:</label>
-                        <input type="text" class="form-control" id="boleta" name="boleta" minlength="10" maxlength="10" required>
+                        <input type="text" class="form-control" id="boleta" name="boleta" minlength="10" maxlength="10">
                         <label for="nombre">Nombre(s):</label>  
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <input type="text" class="form-control" id="nombre" name="nombre" >
                         <label for="a_paterno">Apellido Paterno:</label>
-                        <input type="text" class="form-control" id="a_parterno" name="a_paterno" required>
+                        <input type="text" class="form-control" id="a_parterno" name="a_paterno" >
                         <label for="a_maternos">Apellido Materno:</label>
-                        <input type="text" class="form-control" id="a_materno" name="a_materno" required>
+                        <input type="text" class="form-control" id="a_materno" name="a_materno" >
                         <label for="nacimiento">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control" id="nacimiento" name="nacimiento" required>
+                        <input type="date" class="form-control" id="nacimiento" name="nacimiento" >
                         <label for="curp">CURP:</label>
-                        <input type="text" class="form-control" id="curp" name="curp" minlength="18" maxlength="18" required>
+                        <input type="text" class="form-control" id="curp" name="curp" minlength="18" maxlength="18" >
                         <!-- Genero con bootstrap -->
                         <div>
                             <p>Selecciona tu Género:</p>
@@ -47,11 +47,11 @@
                 <fieldset>
                     <legend>Contacto</legend>
                     <label for="calle">Calle:</label>
-                    <input type="text" class="form-control" id="calle" name="calle" required>
+                    <input type="text" class="form-control" id="calle" name="calle" >
                     <label for="numero">Número:</label>
-                    <input type="number" class="form-control" id="numero" name="numero" required>
+                    <input type="number" class="form-control" id="numero" name="numero" maxlength="4" >
                     <label for="colonia">Colonia:</label>
-                    <input type="number" class="form-control" id="colonia" name="colonia" required>
+                    <input type="text" class="form-control" id="colonia" name="colonia" >
                     <label for="">Alcadía:</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Elige una opcion</option>
@@ -72,12 +72,13 @@
                         <option value="15">Venustiano Carranza</option>
                         <option value="16">Xochimilco</option>
                     </select>
+                    <br>
                     <label for="cp">Código Postal:</label>
-                    <input type="number" class="form-control" id="cp" name="cp" required>
+                    <input type="text" class="form-control" id="cp" name="cp" minlength="5" maxlength="5" >
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" class="form-control" name="telefono" id="telefono" maxlength="10" pattern="[0,9]{5}">
+                    <input type="tel" class="form-control" name="telefono" id="telefono" minlength="10" maxlength="10">
                     <label for="numero">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control" id="email" name="email" >
                 </fieldset>
 
 
@@ -107,6 +108,9 @@
                         <option value="CET 1 «Walter Cross Buchanan»  CDMX">CET 1 «Walter Cross Buchanan»  CDMX</option>
                         <option value="Otro">Otro</option>
                     </select>
+                    <br><br>
+                    <input type="text" class="form-control" id="otro" name="otro" placeholder="Escribe el nombre">
+                     <br><br>
                     <label for="entidad">Entidad Federativa de Procedencia:</label>  
                     <select id="entidad" name="entidad" class="form-select" aria-label="Default select example">
                         <option value="" selected>Elige una opcion</option>
@@ -124,7 +128,7 @@
                         <option value="Guerrero">Guerrero</option>
                         <option value="Hidalgo">Hidalgo</option>
                         <option value="Jalisco">Jalisco</option>
-                        <option value="México">México</option>
+                        <option value="Estado de México">Estado de México</option>
                         <option value="Michoacán de Ocampo">Michoacán de Ocampo</option>
                         <option value="Morelos">Morelos</option>
                         <option value="Nayarit">Nayarit</option>
@@ -143,8 +147,9 @@
                         <option value="Yucatán">Yucatán</option>
                         <option value="Zacatecas">Zacatecas</option>
                     </select>
+                    <br>
                     <label for="promedio">Promedio (considerando decimal):</label>
-                    <input type="number" class="form-control" id="promedio" name="promedio" step="0.01" min="6" max="10" required>
+                    <input type="number" class="form-control" id="promedio" name="promedio" step="0.01" min="6" max="10">
                     <label>Escom fue tu:</label>  
                     <select id="opcion" name="opcion" class="form-select" aria-label="Default select example">
                         <option value="" selected>Elige una opción</option>
@@ -155,7 +160,8 @@
                 </fieldset>
 
                 <div class="botones">
-                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Registrar</button>
+                    <button type="submit" class="btn btn-primary" onclick="limpiarFormulario()">Limpiar</button>
                     <button type="button" class="btn btn-secondary" onclick="modificarFormulario()">Modificar</button>
                 </div>
             </form>
@@ -166,8 +172,3 @@
         <script src="scripts.js"></script>
     </body>
 </html>
-
-
-
-
-
