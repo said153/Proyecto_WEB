@@ -55,15 +55,17 @@ function validarFormulario() {
       return false;
     }
 
-   else {
-    alert("Tu nombre es: " + $('#nombre').val() + "\n");
-    if (respuesta) {
-      alert("Modifica tus datos, no olvides presionar registrar al terminar.");
-      return false;
-    } else {
-      return true;
-    }
+  else {
+  alert("Tu No de Boleta es: " + $('#boleta').val() + "\n" + "Tu nombre es: " + $('#nombre').val() + "\n" +"Tu apellido paterno es: " + $('#a_parterno').val() + "\n" + "Tu apellido materno es: " + $('#a_materno').val() + "\n"+ "Tu fecha de nacimiento es: " + $('#nacimiento').val() + "\n");
+
+  if (window.confirm("¿Quieres modificar?")) {
+    alert("Modifica tus datos, no olvides presionar registrar al terminar."); 
   }
+  else {
+    alert("Tus datos fueron registrados correctamente.");
+    return true;
+  }
+}
 }
    
   
