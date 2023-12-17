@@ -41,6 +41,69 @@
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">Otro</label>
                         </div>
+
+
+                        <div class="grupo-formulario">
+                            <label>A fin de considerar sus necesidades y atenderlas, requerimos saber si usted es una persona con:</label>
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadAuditiva" name="discapacidad[]" value="auditiva">
+                                <label class="form-check-label" for="discapacidadAuditiva">Discapacidad auditiva</label>
+                            </div>
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadVisual" name="discapacidad[]" value="visual">
+                                <label class="form-check-label" for="discapacidadVisual">Discapacidad visual</label>
+                            </div>
+                        
+                            <!-- si quieres que haya más opciones y no esté agrupada, descomentar este y borrar o comentar el otro
+                            <div class="formulario-verificación">
+                                <input class="formulario-check-input" type="checkbox" id="discapacidadMotRuedas" name="discapacidad[]" value="ruedas">
+                                <label class="form-check-label" for="discapacidadMotRueda">Discapacidad motriz Usuaria De Sillas De Ruedas</label>
+                            </div>
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadMotMul" name="discapacidad[]" value="muletas">
+                                <label class="form-check-label" for="discapacidadMotMull">Discapacidad motriz Usuaria De Muletas</label>
+                            </div>
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadBast" name="discapacidad[]" value="baston">
+                                <label class="form-check-label" for="discapacidadMotBast">Discapacidad motriz Usuaria De Bastón</label>
+                            </div>
+                            
+                            -->
+                        
+                            <!-- Discapacidad motriz la que agrupe -->
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadMotriz" name="discapacidad[]" value="motriz">
+                                <label class="form-check-label" for="discapacidadMotriz">Discapacidad motriz</label>
+                        
+                                <!-- Opciones específicas de discapacidad motriz -->
+                                <div id="opcionesMotriz" style="display: none;">
+                        
+                                    <div class="formulario-verificación">
+                                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaRuedas" value="ruedas">
+                                        <label class="form-check-label" for="usuariaRuedas">Usuaria De Sillas De Ruedas</label>
+                                    </div>
+                                    <div class="formulario-verificación">
+                                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaMuletas" value="muletas">
+                                        <label class="form-check-label" for="usuariaMuletas">Usuaria De Muletas</label>
+                                    </div>
+                                    <div class="formulario-verificación">
+                                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaBaston" value="baston">
+                                        <label class="form-check-label" for="usuariaBaston">Usuaria De Bastón</label>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <!-- aquí puse la otra discapacidad -->
+                        
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="otraDiscapacidad" name="discapacidad[]" value="otra">
+                                <label class="form-check-label" for="otraDiscapacidad">Otra opción</label>
+                                <input type="text" class="form-control" id="otraDiscapacidadText" name="otraDiscapacidad" placeholder="Especifica tu discapacidad" style="display: none;">
+                            </div>
+                        </div>
+
+
                 </fieldset>
 
 
