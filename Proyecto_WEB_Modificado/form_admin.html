@@ -5,15 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style_01.css">
         <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-        <title> .: AVANCE DE PROYECTO :. </title>
+        <title>Registro Administrador</title>
     </head>
     <body>
-        <div class="titulo"><h2>Registro</h2></div>
+        <div class="titulo">
+            <div class="ipn">
+                <img src="Logo_IPN.png" alt="">
+            </div>
+            <h2>Registro</h2>
+            <div class="escom">
+                <img src="Logo_Escom.png" alt="">
+            </div>
+        </div>
         <div class="formulario">
             <form id="registroForm" onsubmit="return validarFormulario()">
                 <fieldset class="Identidad"> 
                     <legend>Identidad</legend>
-                        <label for="boleta">Boleta:</label>
+                        <label for="boleta">Matricula:</label>
                         <input type="text" class="form-control" id="boleta" name="boleta" minlength="10" maxlength="10">
                         <label for="nombre">Nombre(s):</label>  
                         <input type="text" class="form-control" id="nombre" name="nombre" >
@@ -82,7 +90,7 @@
                 </fieldset>
 
 
-                <fieldset>
+                <!-- <fieldset>
                     <legend>Procedencia</legend>
                     <label for="escuela">Escuela de procedencia:</label>
                     <select id="escuela" name="escuela" class="form-select" aria-label="Default select example">
@@ -157,7 +165,7 @@
                         <option value="Baja California">Segunda opción</option>
                         <option value="Baja California Sur">Tercera opción</option>
                     </select>
-                </fieldset>
+                </fieldset> -->
 
                 <div class="botones">
                     <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Registrar</button>
@@ -166,8 +174,8 @@
             </form>
         </div>
         <!-- jquery,boostrap y popper  -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-        <script src="scripts.js"></script>
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+         <script src="scripts.js"></script>
     </body>
 </html>

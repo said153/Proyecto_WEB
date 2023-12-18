@@ -2,15 +2,20 @@
     background-color: #b35c65;
 }
 
-.titulo{
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
-    padding: 20px;
     background-color: #7b2234;
 }
-
-h2{
+.titulo h2{
     background-color: #7b2234;
     color: white;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .formulario{
@@ -43,10 +48,41 @@ input{
     margin: 15px 0 15px 0;
 }
 
-.btn-primary{
-    margin-left: 44%;
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.botones button{
+    margin: 0 10px;
 }
 
 .btn-secondary{
     margin-left: 2%;
+}
+
+.ipn{
+    width: 100px;
+    height: 100px;
+    margin-left: 8px;
+}
+
+.ipn img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.escom{
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
+}
+
+.escom img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
 }
