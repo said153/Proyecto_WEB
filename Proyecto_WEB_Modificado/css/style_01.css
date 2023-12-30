@@ -1,5 +1,9 @@
-*{
-    background-color: #b35c65;
+.bg-light{
+    background-color: #122035;
+}
+
+body {
+    background-color: #BFBAB8;
 }
 
 .titulo {
@@ -11,7 +15,7 @@
 }
 .titulo h2{
     background-color: #7b2234;
-    color: white;
+    color: black;
     width: 150px;
     display: flex;
     align-items: center;
@@ -24,7 +28,7 @@
 }
 
 legend{
-    color: white;
+    color: black;
     
 }
 

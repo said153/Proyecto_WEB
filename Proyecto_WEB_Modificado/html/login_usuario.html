@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_02.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style_usuario.css">
     <title>Inicio Sesión</title>
 </head>
-<body class="login2">
-   <!--<h1>Bienvenido Usuario</h1>-->
+<body class="login1">
+   <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="Inicio.html">
+                <img src="../Img/Logo_IPN.png" alt="" width="70px" height="70px" class="d-inline-block align-text-top">
+            </a>
+            <img src="../Img/Encabezado.png" alt="" height="120px" width="200px">
+            <img src="../Img/Logo_Escom.png" alt="" width="70px" height="70px">
+        </div>
+    </nav>
     <section>
         <form>
-            <h2>Login Admin</h2>
+            <h2>Login User</h2>
             <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="email" required>
-                <label for="">Clave</label>
+                <label for="">Boleta</label>
             </div>
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
@@ -27,9 +36,10 @@
             </div>-->
             <button>Entrar</button>
             <div class="register">
-                <p>No tienes una cuenta <a href="form_usuario.html">Registro</a></p>
+                <p>¿No tienes una cuenta? <a href="form_usuario.html">Registro</a></p>
             </div>
         </form>
     </section>
+    <script src="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

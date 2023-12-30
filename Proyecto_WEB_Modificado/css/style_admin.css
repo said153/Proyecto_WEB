@@ -1,36 +1,18 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
-body.login1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url(fondo1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body {
+    background-color: #BFBAB8;
 }
 
-body.login2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url(fondo2.avif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-section{
+section {
     position: relative;
     max-width: 400px;
-    background-color: transparent;
+    background-color: #8D3D3F; /* Fondo del section */
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(55px);
@@ -38,12 +20,23 @@ section{
     justify-content: center;
     align-items: center;
     padding: 2rem 3rem;
+    margin: 9% auto;
+}
+
+section form{
+    background-color: transparent;
+}
+
+.bg-light{
+    padding: 0;
+    background-color: #8D3D3F;
 }
 
 h1, h2{
     font-size: 2rem;
     color: #fff;
     text-align: center;
+    background-color: #8D3D3F;
 }
 
 .inputbox{
@@ -51,6 +44,7 @@ h1, h2{
     margin: 30px 0;
     max-width: 310px;
     border-bottom: 2px solid #fff;
+    background-color: #8D3D3F;
 }
 
 .inputbox label{
@@ -62,6 +56,7 @@ h1, h2{
     font-size: 1rem;
     pointer-events: none;
     transition: all 0.5s ease-in-out;
+    background-color: #8D3D3F;
 }
 
 input:focus ~ label,

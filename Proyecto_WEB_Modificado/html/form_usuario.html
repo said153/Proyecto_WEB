@@ -3,25 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style_01.css">
-        <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-        <title>Registro Administrador</title>
+        <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style_01.css">
+        <title>Registro Usuario</title>
     </head>
     <body>
-        <div class="titulo">
-            <div class="ipn">
-                <img src="Logo_IPN.png" alt="">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="Inicio.html">
+                    <img src="../Img/Logo_IPN.png" alt="" width="70px" height="70px" class="d-inline-block align-text-top">
+                </a>
+                <img src="../Img/Encabezado.png" alt="" height="120px" width="200px">
+                <img src="../Img/Logo_Escom.png" alt="" width="70px" height="70px">
             </div>
-            <h2>Registro</h2>
-            <div class="escom">
-                <img src="Logo_Escom.png" alt="">
-            </div>
-        </div>
+        </nav>
         <div class="formulario">
             <form id="registroForm" onsubmit="return validarFormulario()">
                 <fieldset class="Identidad"> 
                     <legend>Identidad</legend>
-                        <label for="boleta">Matricula:</label>
+                        <label for="boleta">Boleta:</label>
                         <input type="text" class="form-control" id="boleta" name="boleta" minlength="10" maxlength="10">
                         <label for="nombre">Nombre(s):</label>  
                         <input type="text" class="form-control" id="nombre" name="nombre" >
@@ -49,6 +49,52 @@
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">Otro</label>
                         </div>
+                        <div class="grupo-formulario">
+                            <label>A fin de considerar sus necesidades y atenderlas, requerimos saber si usted es una persona con:</label>
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadAuditiva" name="discapacidad[]" value="auditiva">
+                                <label class="form-check-label" for="discapacidadAuditiva">Discapacidad auditiva</label>
+                            </div>
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadVisual" name="discapacidad[]" value="visual">
+                                <label class="form-check-label" for="discapacidadVisual">Discapacidad visual</label>
+                            </div>
+                        
+                            <!-- Discapacidad motriz la que agrupe -->
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="discapacidadMotriz" name="discapacidad[]" value="motriz">
+                                <label class="form-check-label" for="discapacidadMotriz">Discapacidad motriz</label>
+                        
+                                <!-- Opciones específicas de discapacidad motriz -->
+                                <div id="opcionesMotriz" style="display: none;">
+                        
+                                    <div class="formulario-verificación">
+                                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaRuedas" value="ruedas">
+                                        <label class="form-check-label" for="usuariaRuedas">Usuaria De Sillas De Ruedas</label>
+                                    </div>
+                                    <div class="formulario-verificación">
+                                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaMuletas" value="muletas">
+                                        <label class="form-check-label" for="usuariaMuletas">Usuaria De Muletas</label>
+                                    </div>
+                                    <div class="formulario-verificación">
+                                        <input class="form-check-input" type="radio" name="discapacidadMotrizOpcion" id="usuariaBaston" value="baston">
+                                        <label class="form-check-label" for="usuariaBaston">Usuaria De Bastón</label>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <!-- aquí puse la otra discapacidad -->
+                        
+                            <div class="formulario-verificación">
+                                <input class="form-check-input" type="checkbox" id="otraDiscapacidad" name="discapacidad[]" value="otra">
+                                <label class="form-check-label" for="otraDiscapacidad">Otra opción</label>
+                                <input type="text" class="form-control" id="otraDiscapacidadText" name="otraDiscapacidad" placeholder="Especifica tu discapacidad" style="display: none;">
+                            </div>
+                        </div>
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" class="form-control" id="pass" name="pass" minlength="8" maxlength="10">
+
                 </fieldset>
 
 
@@ -90,7 +136,7 @@
                 </fieldset>
 
 
-                <!-- <fieldset>
+                <fieldset>
                     <legend>Procedencia</legend>
                     <label for="escuela">Escuela de procedencia:</label>
                     <select id="escuela" name="escuela" class="form-select" aria-label="Default select example">
@@ -165,7 +211,7 @@
                         <option value="Baja California">Segunda opción</option>
                         <option value="Baja California Sur">Tercera opción</option>
                     </select>
-                </fieldset> -->
+                </fieldset>
 
                 <div class="botones">
                     <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Registrar</button>
@@ -174,8 +220,8 @@
             </form>
         </div>
         <!-- jquery,boostrap y popper  -->
-         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-         <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-         <script src="scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="../js/scripts.js"></script>
     </body>
 </html>

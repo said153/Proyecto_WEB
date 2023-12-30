@@ -1,0 +1,27 @@
+*{
+    background-color: #122035;
+}
+
+.carousel-inner{
+    height: 550px;
+}
+
+.titulo{
+    background-color: burlywood;
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.bg-light{
+    padding: 0;
+}
+
+.btn-lg{
+    margin: 10px;
+}
