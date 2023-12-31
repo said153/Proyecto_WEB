@@ -1,0 +1,63 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.titulo img {
+    width: 150px;
+    height: 200px;
+    margin-right: 100px; 
+    margin-left: 100px; 
+}
+
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+   /* background-color: #7b2234;*/
+}
+
+h1{
+  /*  background-color: #7b2234;*/
+    color: rgb(15, 51, 98);
+}
+
+.formulario{
+    padding: 20px;
+    /* color: white; */
+}
+
+legend{
+    color: rgb(15, 2, 74);
+    
+}
+
+fieldset{
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;    
+}
+
+label, p{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.form-check-input{
+    font-size: 15;
+}
+
+input{
+    margin: 15px 0 15px 0;
+}
+
+.btn-primary{
+    margin-left: 44%;
+}
+
+.btn-secondary{
+    margin-left: 2%;
+}
