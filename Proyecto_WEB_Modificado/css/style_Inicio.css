@@ -1,9 +1,12 @@
 *{
-    background-color: #122035;
+    background: linear-gradient(#122035); /* Degradado de arriba hacia abajo desde #122035 hasta transparente */
+    /*Para regressar a background normanl, borrar linea 2 e insertar
+     "background-color: #122035;" */
 }
 
 .carousel-inner{
     height: 550px;
+   
 }
 
 .titulo{
