@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
@@ -9,7 +9,7 @@ section{
     position: relative;
     display: flex;
     max-width: 400px;
-    background-color: #8D3D3F;
+    background-color: #122035;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(55px);
@@ -21,12 +21,15 @@ section{
 }
 
 body {
-    background-color: #BFBAB8;
+    background-color: #8D3D3F;
 }
 
+nav{
+    padding: 0%;
+}
 
 .bg-light{
-    padding: 0;
+    padding: 0px;
 }
 
 h1, h2{

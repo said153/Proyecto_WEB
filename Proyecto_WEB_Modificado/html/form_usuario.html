@@ -10,17 +10,23 @@
     <body>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <a href="Inicio.html">
-                    <img src="../Img/Logo_IPN.png" alt="" width="70px" height="70px" class="d-inline-block align-text-top">
-                </a>
-                <img src="../Img/Encabezado.png" alt="" height="120px" width="200px">
-                <img src="../Img/Logo_Escom.png" alt="" width="70px" height="70px">
-            </div>
+                <!-- Para regresar a encabezado, logo ipn y logo escom a como estaba , solo quitar el numero 2 o 3
+                   y en vez de ".PNG" debera ser ".png" -->
+               <a href="Inicio.html">
+                   <img src="../Img/Logo_IPN3.PNG" alt="" width="70px" height="70px" class="d-inline-block align-text-top">
+               </a>
+               <a href="Inicio.html">
+                   <img src="../Img/Encabezado2.PNG" alt="" height="120px" width="200px">
+               </a>
+               <a href="Inicio.html">
+                   <img src="../Img/Logo_Escom2.PNG" alt="" width="70px" height="70px">
+               </a>
+           </div>
         </nav>
         <div class="formulario">
             <form id="registroForm" onsubmit="return validarFormulario()">
+                <h2>Identidad</h2>
                 <fieldset class="Identidad"> 
-                    <legend>Identidad</legend>
                         <label for="boleta">Boleta:</label>
                         <input type="text" class="form-control" id="boleta" name="boleta" minlength="10" maxlength="10">
                         <label for="nombre">Nombre(s):</label>  
@@ -97,9 +103,8 @@
 
                 </fieldset>
 
-
+                <h2>Contacto</h2>
                 <fieldset>
-                    <legend>Contacto</legend>
                     <label for="calle">Calle:</label>
                     <input type="text" class="form-control" id="calle" name="calle" >
                     <label for="numero">Número:</label>
@@ -135,9 +140,8 @@
                     <input type="email" class="form-control" id="email" name="email" >
                 </fieldset>
 
-
+                <h2>Procedencia</h2>
                 <fieldset>
-                    <legend>Procedencia</legend>
                     <label for="escuela">Escuela de procedencia:</label>
                     <select id="escuela" name="escuela" class="form-select" aria-label="Default select example">
                         <option value="" selected>Elige una opcion</option>
@@ -163,7 +167,7 @@
                         <option value="Otro">Otro</option>
                     </select>
                     <br><br>
-                    <input type="text" class="form-control" id="otro" name="otro" placeholder="Escribe el nombre">
+                    <input type="text" class="form-control" id="otro" name="otro" placeholder="Escribe el nombre de la escuela">
 
                     <label for="entidad">Entidad Federativa de Procedencia:</label>  
                     <select id="entidad" name="entidad" class="form-select" aria-label="Default select example">
@@ -204,7 +208,7 @@
                     <br>
                     <label for="promedio">Promedio (considerando decimal):</label>
                     <input type="number" class="form-control" id="promedio" name="promedio" step="0.01" min="6" max="10">
-                    <label>Escom fue tu:</label>  
+                    <label>ESCOM fue tu:</label>  
                     <select id="opcion" name="opcion" class="form-select" aria-label="Default select example">
                         <option value="" selected>Elige una opción</option>
                         <option value="Aguascalientes">Primera opción</option>

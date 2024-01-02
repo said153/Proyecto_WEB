@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #BFBAB8;
+    background-color: #8D3D3F;
 }
 
 section {
     position: relative;
     max-width: 400px;
-    background-color: #8D3D3F; /* Fondo del section */
+    background-color: #122035; /* Fondo del section */
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(55px);
@@ -29,14 +29,14 @@ section form{
 
 .bg-light{
     padding: 0;
-    background-color: #8D3D3F;
+    background-color: #122035;
 }
 
 h1, h2{
     font-size: 2rem;
     color: #fff;
     text-align: center;
-    background-color: #8D3D3F;
+    background-color: #122035;
 }
 
 .inputbox{
@@ -44,7 +44,7 @@ h1, h2{
     margin: 30px 0;
     max-width: 310px;
     border-bottom: 2px solid #fff;
-    background-color: #8D3D3F;
+    background-color: #122035;
 }
 
 .inputbox label{
@@ -56,7 +56,7 @@ h1, h2{
     font-size: 1rem;
     pointer-events: none;
     transition: all 0.5s ease-in-out;
-    background-color: #8D3D3F;
+    background-color: #122035;
 }
 
 input:focus ~ label,

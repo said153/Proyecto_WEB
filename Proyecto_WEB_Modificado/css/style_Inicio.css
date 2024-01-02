@@ -1,7 +1,6 @@
-*{
-    background: linear-gradient(#122035); /* Degradado de arriba hacia abajo desde #122035 hasta transparente */
-    /*Para regressar a background normanl, borrar linea 2 e insertar
-     "background-color: #122035;" */
+body{
+    background-color: #8D3D3F
+    ;
 }
 
 .carousel-inner{
@@ -10,15 +9,16 @@
 }
 
 .titulo{
-    background-color: burlywood;
+    background-color: #122035;
     text-align: center;
+    color: white;
 }
 
 .botones {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 2.5%;
 }
 
 .bg-light{
@@ -27,4 +27,8 @@
 
 .btn-lg{
     margin: 10px;
+}
+
+p{
+    font-size: 30px;
 }
