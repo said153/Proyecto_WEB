@@ -3,11 +3,6 @@ body{
     ;
 }
 
-.carousel-inner{
-    height: 550px;
-   
-}
-
 .titulo{
     background-color: #122035;
     text-align: center;
@@ -32,3 +27,84 @@ body{
 p{
     font-size: 30px;
 }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 325px) {
+    /* dispositivos móviles pequeños */
+    .carousel-inner{
+        height: 320px;
+   
+    }
+    .mid{
+        height: 320px;
+        width: 100%;
+    }
+
+}
+
+  /* Media query para teléfonos móviles */
+  @media (min-width: 326px) and (max-width: 509px) {
+    .carousel-inner{
+        height: 380px;
+    
+    }
+    .mid{
+        height: 380px;
+       width: 100%;
+    }
+
+  }
+
+    /* Media query para tablets y dispositivos pequeños */
+    @media (min-width: 510px) and (max-width: 670px) {
+        .carousel-inner{
+            height: 410px;
+            
+        }
+
+        .mid{
+            height: 410px;
+            width: 100%;
+        }
+
+
+      }
+
+     /* Media query para tablets y dispositivos medianos */
+  @media (min-width: 671px) and (max-width: 790px) {
+    .carousel-inner{
+        height: 500px;
+    
+    }
+    .mid{
+        height: 500px;
+        width: 100%;
+    }
+  }
+    /* Media query para escritorios y pantallas grandes */
+    @media (min-width: 791px) and (max-width: 915px) {
+        .carousel-inner{
+            height: 530px;
+           
+        }
+    
+        .mid{
+            height: 530px;
+            width: 100%;
+        }
+    
+      }
+      @media (min-width: 916px) and (max-width: 1900px) {
+
+        .carousel-inner{
+            height: 550px;
+          
+        }
+        
+        .mid{
+            height: 550px;
+            width: 100%;
+        }
+    }
