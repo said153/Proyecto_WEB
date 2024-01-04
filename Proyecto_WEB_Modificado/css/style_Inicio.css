@@ -96,7 +96,7 @@ p{
         }
     
       }
-      @media (min-width: 916px) and (max-width: 1900px) {
+      @media (min-width: 916px) and (max-width: 4900px) {
 
         .carousel-inner{
             height: 550px;
