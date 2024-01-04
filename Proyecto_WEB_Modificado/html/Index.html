@@ -3,24 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-        <title> .: AVANCE DE PROYECTO :. </title>
+        <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style_01.css">
+        <title>Registro Usuario</title>
     </head>
     <body>
-        <div class="titulo">
-
-        <div class="ipn">
-            <img src="LOGOTIPO_IPN.webp"  class="rounded float-start">
-        </div>
-
-        <h1>Registro</h1>
-
-        <div class="escom">
-            <img src="logoescom.png"  class="rounded float-end">
-        </div>
-
-        </div>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Para regresar a encabezado, logo ipn y logo escom a como estaba , solo quitar el numero 2 o 3
+                   y en vez de ".PNG" debera ser ".png" -->
+               <a href="Inicio.html">
+                   <img src="../Img/Logo_IPN3.PNG" alt="" width="70px" height="70px" class="d-inline-block align-text-top">
+               </a>
+               <a href="Inicio.html">
+                   <img src="../Img/Encabezado2.PNG" alt="" height="120px" width="200px">
+               </a>
+               <a href="Inicio.html">
+                   <img src="../Img/Logo_Escom2.PNG" alt="" width="70px" height="70px">
+               </a>
+           </div>
+        </nav>
 
         <div class="formulario">
             <form id="registroForm">
@@ -217,9 +219,9 @@
                     <label>Escom fue tu:</label>  
                     <select id="opcion" name="opcion" class="form-select" aria-label="Default select example" required>
                         <option value="" selected>Elige una opción</option>
-                        <option value="Aguascalientes">Primera opción</option>
-                        <option value="Baja California">Segunda opción</option>
-                        <option value="Baja California Sur">Tercera opción</option>
+                        <option value="Primera Opcion">Primera opción</option>
+                        <option value="Segunda opción">Segunda opción</option>
+                        <option value="Tercera opción">Tercera opción</option>
                     </select>
                 </fieldset>
 
@@ -232,7 +234,7 @@
         </div>
         <!-- jquery,boostrap y popper  -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-        <script src="scripts.js"></script>
+        <script src="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="../js/scripts.js"></script>
     </body>
 </html>
