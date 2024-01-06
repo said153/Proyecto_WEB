@@ -272,3 +272,706 @@
             z-index: 1; /* Asegurar que la imagen resaltada esté encima de las demás */
             cursor: pointer; /* Cambiar el cursor a una mano para indicar que es clickeable */
         }
+/* MEDIA QUERIES */
+
+@media (max-width: 325px) {
+    /* dispositivos móviles pequeños */
+    footer{
+        padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  40px; /* Ancho de la imagen en "em" */
+        height: 40px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 5px;
+    }
+    
+    footer p {
+        font-size: 6px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 5px;
+        
+
+    }
+
+    .imagefoot {
+        width: 25px;
+        height: 25px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+    
+
+    .tooltip::before {
+       
+        font-size: 7px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+    .TopImg{
+        height: 270px;
+        width: 100%;
+   }
+   
+   .shortImg{
+       text-align: center;
+       margin-top: 1px; /* Ajusta el margen según tus necesidades */
+   }
+   
+   .circleImg{
+       height: 80px;
+       width: 80px;
+       margin-left: 10px;
+       margin-right: 10px;
+       margin-top: 10px;
+       margin-bottom: 20px;
+       border-radius: 100px;
+   }
+
+   .text {
+    margin-left: 10px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 5px;
+   }
+
+   .schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+    margin-top: 5px; /* Ajusta el margen según tus necesidades */
+    height: 20px;
+    width: 35px;
+    font-size: 4px;
+    padding-left: .5px;
+    padding-right: .5px;
+    padding-top:3px;
+
+}
+
+.articles{
+    height: 75px;
+    width: 95px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 65px;
+    border-radius: 1px;
+
+}
+
+.text2{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 15px;
+}
+
+.tooltip2::before {
+   
+    top: 97px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: 6px; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+    
+  }
+}
+  
+  /* Media query para teléfonos móviles */
+  @media (min-width: 326px) and (max-width: 509px) {
+    footer{
+        padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  50px; /* Ancho de la imagen en "em" */
+        height: 50px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 9px;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 10px;
+    }
+
+    .imagefoot {
+        width: 30px;
+        height: 30px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+
+    .tooltip::before {
+       
+        font-size: 12px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+
+    .TopImg{
+        height: 270px;
+        width: 100%;
+   }
+
+   .text2{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 20px;
+}
+
+   .shortImg{
+       text-align: center;
+       margin-top: 1px; /* Ajusta el margen según tus necesidades */
+   }
+   
+   .circleImg{
+       height: 100px;
+       width: 100px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-top: 10px;
+       margin-bottom: 40px;
+       border-radius: 100px;
+   }
+
+   .tooltip2::before {
+   
+    top: 118px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: 7px; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+    
+  }
+
+
+   .text {
+    margin-left: 5px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 7px;
+   }
+
+   .schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+    margin-top: 5px; /* Ajusta el margen según tus necesidades */
+    height: 30px;
+    width: 45px;
+    font-size: 7px;
+    padding-left: .5px;
+    padding-right: .5px;
+    padding-top:3px;
+
+}
+
+.articles{
+    height: 100px;
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    border-radius: 1px;
+
+}
+
+
+
+  }
+  
+  /* Media query para tablets y dispositivos pequeños */
+  @media (min-width: 510px) and (max-width: 670px) {
+    footer{
+        padding: 4px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  70px; /* Ancho de la imagen en "em" */
+        height: 70px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+    
+    footer p {
+        font-size: 13px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 15px;
+    }
+
+    .imagefoot {
+        width: 40px;
+        height: 40px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+    
+    .tooltip::before {
+       
+        font-size: 13px; /* Tamaño de fuente del tooltip */
+    }
+
+    .TopImg{
+        height: 300px;
+        width: 100%;
+   }
+
+   .text2{
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 25px;
+}
+
+   .shortImg{
+       text-align: center;
+       margin-top: 1px; /* Ajusta el margen según tus necesidades */
+   }
+   
+   .circleImg{
+       height: 120px;
+       width: 120px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-top: 10px;
+       margin-bottom: 60px;
+       border-radius: 100px;
+   }
+
+   .tooltip2::before {
+   
+    top: 139px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: 10px; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+    
+  }
+
+
+   .text {
+    margin-left: 5px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 10px;
+   }
+
+   .schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+    margin-top: 5px; /* Ajusta el margen según tus necesidades */
+    height: 40px;
+    width: 55px;
+    font-size: 10px;
+    padding-left: .5px;
+    padding-right: .5px;
+    padding-top:3px;
+
+}
+
+.articles{
+    height: 120px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    border-radius: 15px;
+
+}
+
+
+   
+
+  }
+  
+  /* Media query para tablets y dispositivos medianos */
+  @media (min-width: 671px) and (max-width: 790px) {
+    footer a {
+        font-size: 1.1em;
+        margin-top: 2px;
+    }
+    
+    footer p {
+        font-size: .9em;
+    }
+
+    footer img {
+        width: 5.3em; /* Ancho de la imagen en "em" */
+        height: 5.3em; /* Altura de la imagen en "em" */
+       
+    }
+    .imagefoot {
+        width: 3.5em; /* Ancho de la imagen en "em" */
+        height: 3.5em; /* Altura de la imagen en "em" */
+        align-items: center; /* Alineación de los elementos al centro */
+        
+    }
+    
+    
+    .tooltip::before {
+       
+        font-size: 18px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+
+    .TopImg{
+        height: 450px;
+        width: 100%;
+   }
+
+   .text2{
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 36px;
+}
+
+   .shortImg{
+       text-align: center;
+       margin-top: 1px; /* Ajusta el margen según tus necesidades */
+   }
+   
+   .circleImg{
+       height: 190px;
+       width: 190px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-top: 10px;
+       margin-bottom: 70px;
+       border-radius: 100px;
+   }
+
+   .tooltip2::before {
+   
+    top: 217px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: 13px; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+    
+  }
+
+   .text {
+    margin-left: 5px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 15px;
+   }
+
+   .schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+    margin-top: 5px; /* Ajusta el margen según tus necesidades */
+    height: 50px;
+    width: 80px;
+    font-size: 15px;
+    padding-left: .5px;
+    padding-right: .5px;
+    padding-top:3px;
+
+}
+
+.articles{
+    height: 200px;
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 170px;
+    border-radius: 15px;
+
+}
+
+
+  }
+  
+  /* Media query para escritorios y pantallas grandes */
+  @media (min-width: 791px) and (max-width: 915px) {
+    footer{
+        padding: 4px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  90px; /* Ancho de la imagen en "em" */
+        height: 90px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 19px;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 15px;
+    }
+
+    .imagefoot {
+        width: 60px;
+        height: 60px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+  
+    .tooltip::before {
+       
+        font-size: 22px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+    .TopImg{
+        height: 550px;
+        width: 100%;
+   }
+
+   .text2{
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 40px;
+}
+
+   .shortImg{
+       text-align: center;
+       margin-top: 1px; /* Ajusta el margen según tus necesidades */
+   }
+   
+   .circleImg{
+       height: 200px;
+       width: 200px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-top: 10px;
+       margin-bottom: 80px;
+       border-radius: 100px;
+   }
+
+   .tooltip2::before {
+   
+    top: 227px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: 16px; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+    
+  }
+
+   .text {
+    margin-left: 5px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 17px;
+   }
+
+   .schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+    margin-top: 5px; /* Ajusta el margen según tus necesidades */
+    height: 70px;
+    width: 110px;
+    font-size: 18px;
+    padding-left: .5px;
+    padding-right: .5px;
+    padding-top:10px;
+
+}
+
+.articles{
+    height: 210px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+
+}
+
+
+
+  }
+
+  @media (min-width: 916px) and (max-width: 2100px) {
+    footer {
+        position:fixed;
+    }
+    footer a {
+        font-size: 1.1em;
+        margin-top: 0px;
+    }
+
+    
+    footer p {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 5.3em; /* Ancho de la imagen en "em" */
+        height: 5.3em; /* Altura de la imagen en "em" */
+       
+    }
+    .imagefoot {
+        width: 3.5em; /* Ancho de la imagen en "em" */
+        height: 3.5em; /* Altura de la imagen en "em" */
+        padding-bottom: .01px;
+        
+    }
+    
+    .tooltip::before {
+       
+        font-size: 15px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+    .TopImg{
+        height: 480px;
+        width: 100%;
+   }
+
+   .text2{
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 45px;
+}
+
+   .shortImg{
+       text-align: center;
+       margin-top: 1px; /* Ajusta el margen según tus necesidades */
+   }
+   
+   .circleImg{
+       height: 210px;
+       width: 210px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-top: 10px;
+       margin-bottom: 90px;
+       border-radius: 100px;
+   }
+
+   .tooltip2::before {
+   
+    top: 240px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: 17px; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+    
+  }
+
+   .text {
+    padding-top: 10px;
+    margin-left: 5px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+    font-size: 19px;
+    margin-right: 5px;
+   }
+
+   .schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+    margin-top: 5px; /* Ajusta el margen según tus necesidades */
+    height: 75px;
+    width: 115px;
+    font-size: 19px;
+    padding-left: .5px;
+    padding-right: .5px;
+    padding-top:10px;
+
+}
+
+.articles{
+    height: 220px;
+    width: 210px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 190px;
+    border-radius: 20px;
+
+}
+
+
+   
+}
