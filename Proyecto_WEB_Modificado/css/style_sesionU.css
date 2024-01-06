@@ -1,0 +1,274 @@
+ /*Literata*/
+ @font-face {
+    font-family: 'Literata';
+    src: url('https://fonts.google.com/specimen/Literata.woff2') format('woff2'),
+        url('https://fonts.google.com/specimen/Literata.woff') format('woff');
+
+} 
+
+/*Castoro*/
+@font-face {
+    font-family: 'Castoro';
+    src: url('https://fonts.google.com/specimen/Castoro.woff2') format('woff2'),
+        url('https://fonts.google.com/specimen/Castoro.woff') format('woff');
+    
+}
+
+/*Varsity*/
+@font-face {
+    font-family: 'Varsity';
+    src: url('../Fonts/varsity_regular.ttf') format('truetype');
+}
+
+/*Vogue*/
+@font-face {
+    font-family: 'Vogue';
+    src: url('../Fonts/Vogue.ttf') format('truetype');
+}
+
+.images{
+    text-align: center;
+}
+
+.TopImg{
+     height: 530px;
+     width: 100%;
+}
+
+.shortImg{
+    text-align: center;
+    margin-top: 1px; /* Ajusta el margen según tus necesidades */
+}
+
+.circleImg{
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 100px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo para la clase schImg (la imagen) */
+.schImg {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Para mantener la proporción original */
+    border-radius: 20px;
+    transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+/* Efecto de oscurecimiento al pasar el mouse */
+.schImg:hover {
+    filter: brightness(70%); /* Oscurece la imagen al pasar el mouse */
+}
+
+/* Estilo para la clase text (el texto) */
+.text {
+    margin-left: 10px; /* Ajusta el margen según tus necesidades */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+   
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+}
+
+/* Estilo para la clase btn (botón) */
+.btn {
+    margin-top: 10px; /* Ajusta el margen según tus necesidades */
+}
+
+.articles{
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+
+}
+
+.text2{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+}
+
+
+
+  /* Estilos para las imágenes del menú lateral */
+  .image-container3 {
+    position: relative; /* Posición relativa para el contenedor de la imagen */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    transition: transform 0.3s ease-in-out; /* Transición para suavizar el efecto al resaltar la imagen */
+}
+
+.image-container3 img {
+    display: block; /* Mostrar la imagen como un bloque */
+    border-radius: auto; /* Opcional: agregar bordes redondeados a la imagen */
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+}
+
+.image-container3.center {
+    transform: scale(1.15); /* Aumentar el tamaño de la imagen en 15% */
+    z-index: 1; /* Asegurar que la imagen resaltada esté encima de las demás */
+    cursor: pointer; /* Cambiar el cursor a una mano para indicar que es clickeable */
+}
+
+
+.menu-button:hover{
+    transform: scale(1.15);
+    transition: all 300ms;
+}
+
+.menu-button{
+    transition: all 300ms;
+}
+
+.menu-button2:hover{
+    transform: scale(1.02);
+    transition: all 300ms;
+}
+
+.menu-button2{
+    transition: all 300ms;
+}
+
+  /* Estilos para las etiquetas de información en el menú con ajustes de posición */
+  .tooltip2 {
+    position: relative; /* Posición relativa para el tooltip */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    margin-bottom: 45px; /* Margen inferior de 45px */
+    align-items: center; /* Alineación de los elementos al centro */
+}
+
+.tooltip2::before {
+    content: attr(data-tooltip2); /* Contenido del tooltip obtenido del atributo data-tooltip2 */
+    display: none; /* Ocultar el tooltip inicialmente */
+    position: absolute; /* Posición absoluta para el tooltip */
+    top: 10px; /* Colocar el tooltip debajo del elemento */
+    left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+    transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+    padding: 5px 10px; /* Espaciado interno del tooltip */
+    background-color: #8C3E69; /* Color de fondo del tooltip */
+    color: #ffffff; /* Color del texto del tooltip */
+    border-radius: 10px; /* Radio de curvatura para los bordes del tooltip */
+    font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+    font-size: small; /* Tamaño de fuente Pequeño */
+    align-items: center; /* Alineación de los elementos al centro */
+
+}
+
+.tooltip2:hover::before {
+    display: block; /* Mostrar el tooltip al pasar el cursor sobre el elemento */
+    align-items: center;/* Alineación de los elementos al centro */
+}
+
+.miniBox{
+    display: inline-block; /* Mostrar los elementos como elementos en línea */
+    margin: 10px; /* Espacio entre las cajas */
+    text-align: center; /* Centrar el contenido horizontalmente */
+   
+}
+
+/*PIE DE PAGINA*/
+    
+    
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #8C3E69; /* Color de fondo del pie de página con transparencia */
+            font-size: 14px; /* Tamaño de fuente de 14px */
+            color: #ffffff; /* Color del texto en blanco */
+            width: 100%; /* Ancho del pie de página al 100% */
+            height: 90px; /* Altura del pie de página de 90px */
+            bottom: 0; /* Posicionar en la parte inferior */
+            border: 1px solid #8C3E69; /* Agregar un borde sólido de 1px en color blanco */
+            border-top-left-radius: 10px; /* Radio circular en la esquina superior izquierda */
+            border-top-right-radius: 10px; /* Radio circular en la esquina superior derecha */
+            border-bottom: 1px solid #8C3E69; /* Borde recto en la parte inferior */
+            height: auto;
+            display: flex; /* Utilizamos flexbox para organizar los elementos dentro del footer */
+            justify-content: space-between; /* Distribuir los elementos de forma equitativa */
+            align-items: center; /* Alinear los elementos verticalmente al centro */
+            padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+            position: sticky;
+        }
+    
+        /* Estilos para el contenido del pie de página */
+        footer .content {
+            display: flex; /* Mostrar los elementos como flexbox */ /* organiza elementos dentro de un contenedor de una manera flexible y dinámica*/
+            align-items: center; /* Alinear verticalmente el contenido */
+        }
+    
+        footer .content2 {
+            position: absolute; /* Cambiar a posición absoluta */
+            display: flex;
+            align-items: center;
+            bottom: 15px; /* Alinear en la parte inferior del pie de página con un pequeño margen */
+            right: 15px;
+        }
+    
+        /* Estilos para la imagen del pie de página */
+        footer img {
+            width: 85px; /* Ancho de la imagen */
+            height: 85px; /* Altura de la imagen */
+            align-items: center; /* Alineación de los elementos al centro */
+        }
+    
+        /* Estilos para el contenedor del texto en el pie de página */
+        footer .text-container {
+            display: flex; /* Mostrar los elementos como flexbox */
+            flex-direction: column; /* Organizar el contenido en una columna */
+            justify-content: center; /* Alinear verticalmente el texto al centro */
+        }
+    
+        footer a {
+            color: #ffffff; /* Color del texto en blanco */
+            margin: 0; /* Margen de 0 para eliminar espacios innecesarios */
+            text-decoration: underline; /* Subrayar el enlace */
+            text-align: left;
+        }
+    
+        footer p {
+            margin: 0; /* Margen de 0 para eliminar espacios innecesarios */
+        }
+    
+        /* Estilos para las imágenes en el pie de página */
+        .imagefoot {
+            align-items: center; /* Alineación de los elementos al centro */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            justify-content: flex-end; /* Alinear todos los elementos a la derecha */
+            padding: 5px; /* Espaciado interno de 5px */
+            border-radius: 30px; /* Radio de curvatura para los bordes de la imagen */
+        }
+    
+        /* Estilos para las imágenes del las imagenes del foot  */
+        .image-container4 {
+            position: relative; /* Posición relativa para el contenedor de la imagen */
+            display: inline-block; /* Mostrar como un bloque en línea */
+            transition: transform 0.3s ease-in-out; /* Transición para suavizar el efecto al resaltar la imagen */
+        }
+        
+        .image-container4 img {
+            display: block; /* Mostrar la imagen como un bloque */
+            border-radius: auto; /* Opcional: agregar bordes redondeados a la imagen */
+            object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+        }
+        
+        .image-container4.center {
+            transform: scale(1.15); /* Aumentar el tamaño de la imagen en 15% */
+            z-index: 1; /* Asegurar que la imagen resaltada esté encima de las demás */
+            cursor: pointer; /* Cambiar el cursor a una mano para indicar que es clickeable */
+        }
