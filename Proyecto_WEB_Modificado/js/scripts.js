@@ -199,3 +199,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+//aqui agrego la seccion de informacion del estudiante en la nav var
+function mostrarSeccion(idSeccion) {
+  // Verifica si es la sección 4 y cierra el recuadro si es el caso
+  if (idSeccion === 'seccion4') {
+    var recuadro1 = document.getElementById('seccion1');
+    recuadro1.style.display = 'none';
+
+    var recuadro2 = document.getElementById('seccion2');
+    recuadro2.style.display = 'none';
+
+    var recuadro3 = document.getElementById('seccion3');
+    recuadro3.style.display = 'none';
+  } else {
+    // Oculta todas las secciones excepto la seleccionada
+    var secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(function (seccion) {
+      seccion.style.display = 'none';
+    });
+
+    // Muestra solo la sección seleccionada
+    var seccionSeleccionada = document.getElementById(idSeccion);
+    seccionSeleccionada.style.display = 'block';
+  }
+}
+

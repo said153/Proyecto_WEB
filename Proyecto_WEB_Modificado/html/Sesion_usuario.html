@@ -27,6 +27,138 @@
           <div >
             <img src="../Img/ImagenSesion4.jpeg" class="TopImg" alt="...">
           </div>
+          <div>
+            <h1 class="text2">
+                INFORMACION DEL ALUMNO
+               
+            </h1>
+            <p class="text3">(da click para ver cada seccion de tu informacion)</p>
+          </div>
+
+          <div class>
+
+            <nav>
+                <ul>
+                
+                  <li onclick="mostrarSeccion('seccion1')" class="cell menu-button3 clickable miniBox tooltip3" data-tooltip3="Identidad">
+                    <img src="../Img/iddad.jpg" class="infoImg " >
+                    </li>
+
+                  <li onclick="mostrarSeccion('seccion2')" class="cell menu-button3 clickable miniBox tooltip3" data-tooltip3="Contacto">
+                    <img src="../Img/contacto.jpg" class="infoImg  " >
+                </li>
+                  <li onclick="mostrarSeccion('seccion3')" class="cell menu-button3 clickable miniBox tooltip3" data-tooltip3="Procedencia">
+                    <img src="../Img/procedencia.jpg" class="infoImg" >
+                </li>
+                  <li onclick="mostrarSeccion('seccion4')" class="cell menu-button3 clickable miniBox tooltip3" data-tooltip3="Cerrar Ventana">
+                    <img src="../Img/bloq.jpg" class="infoImg" >
+                </li>
+                </ul>
+              </nav>
+              
+          </div>
+
+        <div id="seccion1" class="seccion">
+            <form class="formBlock">
+                <label for="boleta">Boleta:</label>
+                <input type="text" id="boleta" name="boleta" required><br>
+              
+                <label for="nombres">Nombre(s):</label>
+                <input type="text" id="nombres" name="nombres" required><br>
+              
+                <label for="apellidoPaterno">Apellido Paterno:</label>
+                <input type="text" id="apellidoPaterno" name="apellidoPaterno" required><br>
+              
+                <label for="apellidoMaterno">Apellido Materno:</label>
+                <input type="text" id="apellidoMaterno" name="apellidoMaterno" required><br>
+              
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+              
+                <label for="curp">CURP:</label>
+                <input type="text" id="curp" name="curp" required><br>
+              
+                <label for="genero">Selecciona tu Género:</label><br>
+                <input type="radio" id="hombre" name="genero" value="Hombre">
+                <label for="hombre">Hombre</label>
+              
+                <input type="radio" id="mujer" name="genero" value="Mujer">
+                <label for="mujer">Mujer</label>
+              
+                <input type="radio" id="otro" name="genero" value="Otro">
+                <label for="otro">Otro</label><br>
+              
+                <p>A fin de considerar sus necesidades y atenderlas, requerimos saber si usted es una persona con:</p>
+                <input type="checkbox" id="discapacidadAuditiva" name="discapacidad" value="Discapacidad auditiva">
+                <label for="discapacidadAuditiva">Discapacidad auditiva</label><br>
+              
+                <input type="checkbox" id="discapacidadVisual" name="discapacidad" value="Discapacidad visual">
+                <label for="discapacidadVisual">Discapacidad visual</label><br>
+              
+                <input type="checkbox" id="discapacidadMotriz" name="discapacidad" value="Discapacidad motriz">
+                <label for="discapacidadMotriz">Discapacidad motriz</label><br>
+              
+                <input type="checkbox" id="otraDiscapacidad" name="discapacidad" value="Otra opción">
+                <label for="otraDiscapacidad">Otra opción</label><br>
+              
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required><br>
+              
+              </form>
+              
+        </div>
+        <div id="seccion2" class="seccion">
+            <form class="formBlock">
+                <label for="calle">Calle:</label>
+                <input type="text" id="calle" name="calle" required><br>
+              
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required><br>
+              
+                <label for="colonia">Colonia:</label>
+                <input type="text" id="colonia" name="colonia" required><br>
+              
+                <label for="alcaldia">Alcaldía:</label>
+                <input type="text" id="alcaldia" name="alcaldia" required><br>
+              
+                <label for="codigoPostal">Código Postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" required><br>
+              
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+              
+                <label for="correoElectronico">Correo electrónico:</label>
+                <input type="email" id="correoElectronico" name="correoElectronico" required><br>
+              
+            
+              </form>
+            
+        </div>
+        <div id="seccion3" class="seccion">
+            <form class="formBlock">
+                <label for="escuelaProcedencia">Escuela de procedencia:</label>
+                <input type="text" id="escuelaProcedencia" name="escuelaProcedencia" required><br>
+              
+                <label for="entidadProcedencia">Entidad Federativa de Procedencia:</label>
+                <input type="text" id="entidadProcedencia" name="entidadProcedencia" required><br>
+              
+                <label for="promedio">Promedio (considerando decimal):</label>
+                <input type="number" id="promedio" name="promedio" step="0.01" required><br>
+              
+                <p>ESCOM fue tu:</p>
+                <input type="radio" id="primeraOpcion" name="opcionESCOM" value="Primera opción">
+                <label for="primeraOpcion">Primera opción</label><br>
+              
+                <input type="radio" id="segundaOpcion" name="opcionESCOM" value="Segunda opción">
+                <label for="segundaOpcion">Segunda opción</label><br>
+              
+                <input type="radio" id="terceraOpcion" name="opcionESCOM" value="Tercera opción">
+                <label for="terceraOpcion">Tercera opción</label><br>
+              
+           
+              </form>
+        </div>
+
 
 
           <div class="images">
@@ -70,22 +202,17 @@
           <div class="flex-container">
             <img src="../Img/ipn.jpeg" class="schImg menu-button2 clickable" alt="...">
             <div class="text-container">
+                    <h4 class="text">
+                        ¿Qué es el IPN?
+                    </h4>
                 <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                    Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                    molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                    officiis deserunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                    Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                    molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                    officiis deserunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                    Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                    molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                    officiis deserunt?
+                    El Instituto Politécnico Nacional (IPN) es una institución pública mexicana de educación superior
+                     y posgrado, con una amplia oferta académica en áreas científicas, tecnológicas, humanísticas y artísticas. 
+                     Es una de las instituciones educativas más importantes de México y de América Latina, y ha formado a generaciones 
+                     de profesionistas que han contribuido al desarrollo del país.
                     <br>
                     <br>
-                    <a href="https://www.ipn.mx/dae/"  class="btn btn-primary">Ir al Enlace</a>
+                    <a href="https://www.ipn.mx/dae/"  class="btn btn-primary">Visita IPN</a>
                 </p>
             
          </div>
@@ -93,22 +220,17 @@
 
         <div class="flex-container">
             <div class="text-container">
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                    Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                    molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                    officiis deserunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                    Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                    molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                    officiis deserunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                    Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                    molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                    officiis deserunt?
+                <h4 class="text">
+                    ¿Qué es el ESCOM?
+                </h4>
+            <p class="text">
+                La Escuela Superior de Cómputo (ESCOM) es una institución pública mexicana de educación superior,
+                 perteneciente al Instituto Politécnico Nacional (IPN). Fue fundada en 1993 con el objetivo de formar 
+                 ingenieros en sistemas computacionales de excelencia, comprometidos con el desarrollo científico y 
+                 tecnológico del país.
+                     <br>
                     <br>
-                    <br>
-                    <a href="https://www.escom.ipn.mx/"  class="btn btn-primary">Ir al Enlace</a>
+                    <a href="https://www.escom.ipn.mx/"  class="btn btn-primary">Visita ESCOM</a>
                 </p>
          </div>
             <img src="../Img/Escom2.jpeg" class="schImg menu-button2 clickable" alt="...">
@@ -117,22 +239,16 @@
         <div class="flex-container">
             <img src="../Img/ESCOM3.jpeg" class="schImg menu-button2 clickable " alt="...">
             <div class="text-container">
+                    <h4 class="text">
+                        ¿Qué es el ESCOMunidad?
+                    </h4>
                     <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                        Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                        molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                        officiis deserunt?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                        Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                        molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                        officiis deserunt?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat consequatur fuga! 
-                        Laudantium dolores omnis obcaecati tenetur dolor aspernatur a
-                        molestias explicabo officiis. Omnis, nihil voluptates delectus tenetur 
-                        officiis deserunt?
+                        ESCOMunidad es una comunidad digital que reúne a la comunidad de la Escuela Superior de Cómputo (ESCOM) 
+                        del Instituto Politécnico Nacional (IPN). Es un espacio en línea donde los estudiantes, exalumnos, profesores
+                         y personal de ESCOM pueden conectarse, compartir información y experiencias, y colaborar en proyectos.
                         <br>
                         <br>
-                        <a href="https://twitter.com/escomunidad"  class="btn btn-primary">Ir al Enlace</a>
+                        <a href="https://twitter.com/escomunidad"  class="btn btn-primary">Conocela</a>
                     </p>
              </div>
         </div>
