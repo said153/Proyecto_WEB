@@ -122,7 +122,7 @@
     text-align: justify;
     display: block; /* Hace que el contenedor ocupe solo el espacio de la imagen */
     margin: auto; /* Centra la imagen dentro del contenedor */
-    background: linear-gradient(to bottom, #122035, #8C3E69); /* Degradado vertical de arriba a abajo */
+    background-color: #a0989c79;
     border: 2px solid black; /* Borde negro */
     border-radius: 10px; /* Bordes redondeados, ajusta según tu preferencia */
     padding-top: 25px; /* Relleno dentro del contenedor */
@@ -134,7 +134,7 @@
     margin-right: 10px;
     font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
    font-size: 16px;
-   color: beige;
+   color: rgb(0, 0, 0);
    
 }
 
