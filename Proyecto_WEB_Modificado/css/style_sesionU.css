@@ -89,7 +89,7 @@
 }
 
 .tooltip3::before {
-    content: attr(data-tooltip3); /* Contenido del tooltip obtenido del atributo data-tooltip2 */
+    content: attr(data-tooltip3); /* Contenido del tooltip obtenido del atributo data-tooltip */
     display: none; /* Ocultar el tooltip inicialmente */
     position: absolute; /* Posición absoluta para el tooltip */
     top: -40px; /* Colocar el tooltip debajo del elemento */

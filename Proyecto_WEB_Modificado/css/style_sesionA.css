@@ -6,19 +6,976 @@
 
 
 body {
-    background: linear-gradient(45deg, #8C3E69 50%, #122035 50%);
+    background: linear-gradient(45deg, #8c3e69 50%, #122035 50%);
     height: 100vh;
     margin: 0;
   }
 
-  .text{
-
+  .adminText{
     text-align: left;
     font-size: 190px;
-   padding-top: 20%;
     padding-left: 20px;
+    margin-top: -16%;
     color:beige;
-
     font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
 
   }
+
+
+  .imgS {
+    text-align: center;
+}
+
+.sha{  
+   width: 400px;
+    height: 410px;
+  margin-top: 6%;
+
+}
+
+
+
+.images{
+  text-align: right;
+}
+
+.shortImg{
+  text-align: center;
+  margin-top: 1px; /* Ajusta el margen según tus necesidades */
+}
+
+ /* Estilos para las etiquetas de información en el menú con ajustes de posición */
+ .tooltip2 {
+  position: relative; /* Posición relativa para el tooltip */
+  display: inline-block; /* Mostrar como un bloque en línea */
+  margin-bottom: 45px; /* Margen inferior de 45px */
+  align-items: center; /* Alineación de los elementos al centro */
+}
+
+.tooltip2::before {
+  content: attr(data-tooltip2); /* Contenido del tooltip obtenido del atributo data-tooltip2 */
+  display: none; /* Ocultar el tooltip inicialmente */
+  position: absolute; /* Posición absoluta para el tooltip */
+  top: 10px; /* Colocar el tooltip debajo del elemento */
+  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+  padding: 5px 10px; /* Espaciado interno del tooltip */
+  background-color: #8C3E69; /* Color de fondo del tooltip */
+  color: #ffffff; /* Color del texto del tooltip */
+  border-radius: 10px; /* Radio de curvatura para los bordes del tooltip */
+  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+  font-size: small; /* Tamaño de fuente Pequeño */
+  align-items: center; /* Alineación de los elementos al centro */
+
+}
+
+.tooltip2:hover::before {
+  display: block; /* Mostrar el tooltip al pasar el cursor sobre el elemento */
+  align-items: center;/* Alineación de los elementos al centro */
+}
+
+.miniBox{
+  display: inline-block; /* Mostrar los elementos como elementos en línea */
+  margin: 10px; /* Espacio entre las cajas */
+  text-align: center; /* Centrar el contenido horizontalmente */
+ 
+}
+
+.circleImg{
+  height: 10px;
+  width: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 100px;
+}
+
+.menu-button:hover{
+  transform: scale(1.15);
+  transition: all 300ms;
+}
+
+.menu-button{
+  transition: all 300ms;
+}
+
+
+/*PIE DE PAGINA*/
+    
+    
+        /* Estilos para el pie de página */
+        footer {
+          background-color: #8c3e69; /* Color de fondo del pie de página con transparencia */
+          font-size: 14px; /* Tamaño de fuente de 14px */
+          color: #ffffff; /* Color del texto en blanco */
+          width: 100%; /* Ancho del pie de página al 100% */
+          height: 90px; /* Altura del pie de página de 90px */
+          bottom: 0; /* Posicionar en la parte inferior */
+          border: 4px solid #000000; /* Agregar un borde sólido de 1px en color blanco */
+          border-top-left-radius: 40px; /* Radio circular en la esquina superior izquierda */
+          border-top-right-radius: 40px; /* Radio circular en la esquina superior derecha */
+          border-bottom: 1px solid #8C3E69; /* Borde recto en la parte inferior */
+          height: auto;
+          display: flex; /* Utilizamos flexbox para organizar los elementos dentro del footer */
+          justify-content: space-between; /* Distribuir los elementos de forma equitativa */
+          align-items: center; /* Alinear los elementos verticalmente al centro */
+          padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+          position: sticky;
+      }
+  
+      /* Estilos para el contenido del pie de página */
+      footer .content {
+          display: flex; /* Mostrar los elementos como flexbox */ /* organiza elementos dentro de un contenedor de una manera flexible y dinámica*/
+          align-items: center; /* Alinear verticalmente el contenido */
+      }
+  
+      footer .content2 {
+          position: absolute; /* Cambiar a posición absoluta */
+          display: flex;
+          align-items: center;
+          bottom: 15px; /* Alinear en la parte inferior del pie de página con un pequeño margen */
+          right: 15px;
+      }
+  
+      /* Estilos para la imagen del pie de página */
+      footer img {
+          width: 85px; /* Ancho de la imagen */
+          height: 85px; /* Altura de la imagen */
+          align-items: center; /* Alineación de los elementos al centro */
+      }
+  
+      /* Estilos para el contenedor del texto en el pie de página */
+      footer .text-container {
+          display: flex; /* Mostrar los elementos como flexbox */
+          flex-direction: column; /* Organizar el contenido en una columna */
+          justify-content: center; /* Alinear verticalmente el texto al centro */
+      }
+  
+      footer a {
+          color: #ffffff; /* Color del texto en blanco */
+          margin: 0; /* Margen de 0 para eliminar espacios innecesarios */
+          text-decoration: underline; /* Subrayar el enlace */
+          text-align: left;
+      }
+  
+      footer p {
+          margin: 0; /* Margen de 0 para eliminar espacios innecesarios */
+      }
+  
+      /* Estilos para las imágenes en el pie de página */
+      .imagefoot {
+          align-items: center; /* Alineación de los elementos al centro */
+          width: 50px; /* Ancho de la imagen */
+          height: 50px; /* Altura de la imagen */
+          justify-content: flex-end; /* Alinear todos los elementos a la derecha */
+          padding: 5px; /* Espaciado interno de 5px */
+          border-radius: 30px; /* Radio de curvatura para los bordes de la imagen */
+      }
+  
+      /* Estilos para las imágenes del las imagenes del foot  */
+      .image-container4 {
+          position: relative; /* Posición relativa para el contenedor de la imagen */
+          display: inline-block; /* Mostrar como un bloque en línea */
+          transition: transform 0.3s ease-in-out; /* Transición para suavizar el efecto al resaltar la imagen */
+      }
+      
+      .image-container4 img {
+          display: block; /* Mostrar la imagen como un bloque */
+          border-radius: auto; /* Opcional: agregar bordes redondeados a la imagen */
+          object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+      }
+      
+      .image-container4.center {
+          transform: scale(1.15); /* Aumentar el tamaño de la imagen en 15% */
+          z-index: 1; /* Asegurar que la imagen resaltada esté encima de las demás */
+          cursor: pointer; /* Cambiar el cursor a una mano para indicar que es clickeable */
+      }
+
+      .menu-button:hover{
+        transform: scale(1.15);
+        transition: all 300ms;
+    }
+    
+    .menu-button{
+        transition: all 300ms;
+    }
+
+
+      /* MEDIA QUERIES */
+
+@media (max-width: 325px) {
+  /* dispositivos móviles pequeños */
+  footer{
+      padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+       
+  }
+
+  footer img {
+      width:  40px; /* Ancho de la imagen en "em" */
+      height: 40px; /* Altura de la imagen en "em" */
+     
+  }
+
+  footer a {
+      font-size: 5px;
+  }
+  
+  footer p {
+      font-size: 6px;
+  }
+
+  footer .content2 {
+      position: absolute; /* Cambiar a posición absoluta */
+      display: flex;
+      align-items: center;
+      bottom: 5px;
+      
+
+  }
+
+  .imagefoot {
+      width: 25px;
+      height: 25px;
+      align-items: center; /* Alineación de los elementos al centro */
+      margin-bottom: 0%;
+      margin-right: 0px;
+      
+  }
+  
+
+  .tooltip::before {
+     
+      font-size: 7px; /* Tamaño de fuente del tooltip en "em" */
+  }
+  
+  /*acaaa */
+
+  .images{
+    padding-right: 20px;
+  }
+ 
+ .shortImg{
+     text-align: center;
+     margin-top: 1px; /* Ajusta el margen según tus necesidades */
+ }
+ 
+ .circleImg{
+     height: 30px;
+     width: 30px;
+     margin-left: 3px;
+     margin-right: 3px;
+     margin-top: 5px;
+     margin-bottom: 55px;
+     border-radius: 100px;
+     border: .2px solid #ffffff;
+     
+ }
+
+
+ .schImg {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Para mantener la proporción original */
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+ 
+}
+
+.tooltip2::before {
+ 
+  top: 44px; /* Colocar el tooltip debajo del elemento */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-size: 6px; /* Tamaño de fuente Pequeño */
+  border: .5px solid #ffffff;
+}
+
+.adminText{
+  text-align: left;
+  font-size: 6px;
+  padding-left: 10px;
+  padding-bottom: 160px;
+  margin-top: -80%;
+  color:beige;
+  font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
+
+}
+
+
+.sha{  
+ width: 120px;
+  height: 130px;
+margin-top: 35%;
+
+}
+
+}
+
+/* Media query para teléfonos móviles */
+@media (min-width: 326px) and (max-width: 509px) {
+  footer{
+      padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+       
+  }
+
+  footer img {
+      width:  50px; /* Ancho de la imagen en "em" */
+      height: 50px; /* Altura de la imagen en "em" */
+     
+  }
+
+  footer a {
+      font-size: 9px;
+  }
+  
+  footer p {
+      font-size: 10px;
+  }
+
+  footer .content2 {
+      position: absolute; /* Cambiar a posición absoluta */
+      display: flex;
+      align-items: center;
+      bottom: 10px;
+  }
+
+  .imagefoot {
+      width: 30px;
+      height: 30px;
+      align-items: center; /* Alineación de los elementos al centro */
+      margin-bottom: 0%;
+      margin-right: 0px;
+      
+  }
+
+  .tooltip::before {
+     
+      font-size: 12px; /* Tamaño de fuente del tooltip en "em" */
+  }
+
+
+  .images{
+    padding-right: 20px;
+  }
+ 
+ .shortImg{
+     text-align: center;
+     margin-top: 1px; /* Ajusta el margen según tus necesidades */
+ }
+ 
+ .circleImg{
+     height: 55px;
+     width: 55px;
+     margin-left: 3px;
+     margin-right: 3px;
+     margin-top: 2px;
+     margin-bottom: 55px;
+     border-radius: 100px;
+     border: .2px solid #ffffff;
+     
+ }
+
+
+ .schImg {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Para mantener la proporción original */
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+ 
+}
+
+.tooltip2::before {
+ 
+  top: 7px; /* Colocar el tooltip debajo del elemento */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-size: 6px; /* Tamaño de fuente Pequeño */
+  border: .5px solid #ffffff;
+}
+
+.adminText{
+  text-align: left;
+  font-size: 6px;
+  padding-left: 10px;
+  padding-bottom: 300px;
+  margin-top: -80%;
+  color:beige;
+  font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
+
+}
+
+
+.sha{  
+ width: 170px;
+  height: 180px;
+margin-top: 35%;
+
+}
+
+}
+
+/* Media query para tablets y dispositivos pequeños */
+@media (min-width: 510px) and (max-width: 670px) {
+  footer{
+      padding: 4px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+       
+  }
+
+  footer img {
+      width:  70px; /* Ancho de la imagen en "em" */
+      height: 70px; /* Altura de la imagen en "em" */
+     
+  }
+
+  footer a {
+      font-size: 12px;
+  }
+  
+  footer p {
+      font-size: 13px;
+  }
+
+  footer .content2 {
+      position: absolute; /* Cambiar a posición absoluta */
+      display: flex;
+      align-items: center;
+      bottom: 15px;
+  }
+
+  .imagefoot {
+      width: 40px;
+      height: 40px;
+      align-items: center; /* Alineación de los elementos al centro */
+      margin-bottom: 0%;
+      margin-right: 0px;
+      
+  }
+  
+  .tooltip::before {
+     
+      font-size: 13px; /* Tamaño de fuente del tooltip */
+  }
+
+  .TopImg{
+      height: 300px;
+      width: 100%;
+ }
+
+ .text2{
+  text-align: center;
+  margin-top: 16px;
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 25px;
+}
+
+ .shortImg{
+     text-align: center;
+     margin-top: 1px; /* Ajusta el margen según tus necesidades */
+ }
+ 
+ .circleImg{
+     height: 120px;
+     width: 120px;
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-top: 10px;
+     margin-bottom: 60px;
+     border-radius: 100px;
+ }
+
+ .tooltip2::before {
+ 
+  top: 139px; /* Colocar el tooltip debajo del elemento */
+  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+  font-size: 10px; /* Tamaño de fuente Pequeño */
+  align-items: center; /* Alineación de los elementos al centro */
+  
+}
+
+
+ .text {
+  margin-left: 5px; /* Ajusta el margen según tus necesidades */
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 10px;
+ }
+
+ .schImg {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Para mantener la proporción original */
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+  margin-top: 5px; /* Ajusta el margen según tus necesidades */
+  height: 40px;
+  width: 55px;
+  font-size: 10px;
+  padding-left: .5px;
+  padding-right: .5px;
+  padding-top:3px;
+
+}
+
+.articles{
+  height: 120px;
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  border-radius: 15px;
+
+}
+
+
+
+.tooltip3::before {
+  top: -45px; /* Colocar el tooltip debajo del elemento */
+  font-size: 10px; /* Tamaño de fuente Pequeño */
+}
+
+.formBlock{
+ font-size: 15px;
+ padding-left: 28px;
+ padding-right: 28px;
+ 
+}
+.cell{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.infoImg{
+  width: 27px;
+  height: 47px;
+}
+
+.text3{
+  font-size: 14px;
+}
+
+
+
+ 
+
+}
+
+/* Media query para tablets y dispositivos medianos */
+@media (min-width: 671px) and (max-width: 790px) {
+  footer a {
+      font-size: 1.1em;
+      margin-top: 2px;
+  }
+  
+  footer p {
+      font-size: .9em;
+  }
+
+  footer img {
+      width: 5.3em; /* Ancho de la imagen en "em" */
+      height: 5.3em; /* Altura de la imagen en "em" */
+     
+  }
+  .imagefoot {
+      width: 3.5em; /* Ancho de la imagen en "em" */
+      height: 3.5em; /* Altura de la imagen en "em" */
+      align-items: center; /* Alineación de los elementos al centro */
+      
+  }
+  
+  
+  .tooltip::before {
+     
+      font-size: 18px; /* Tamaño de fuente del tooltip en "em" */
+  }
+
+
+  .TopImg{
+      height: 450px;
+      width: 100%;
+ }
+
+ .text2{
+  text-align: center;
+  margin-top: 16px;
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 36px;
+}
+
+ .shortImg{
+     text-align: center;
+     margin-top: 1px; /* Ajusta el margen según tus necesidades */
+ }
+ 
+ .circleImg{
+     height: 190px;
+     width: 190px;
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-top: 10px;
+     margin-bottom: 70px;
+     border-radius: 100px;
+ }
+
+ .tooltip2::before {
+ 
+  top: 217px; /* Colocar el tooltip debajo del elemento */
+  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+  font-size: 13px; /* Tamaño de fuente Pequeño */
+  align-items: center; /* Alineación de los elementos al centro */
+  
+}
+
+ .text {
+  margin-left: 5px; /* Ajusta el margen según tus necesidades */
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 15px;
+ }
+
+ .schImg {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Para mantener la proporción original */
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+  margin-top: 5px; /* Ajusta el margen según tus necesidades */
+  height: 50px;
+  width: 80px;
+  font-size: 15px;
+  padding-left: .5px;
+  padding-right: .5px;
+  padding-top:3px;
+
+}
+
+.articles{
+  height: 200px;
+  width: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 170px;
+  border-radius: 15px;
+
+}
+
+
+.tooltip3::before {
+  top: -60px; /* Colocar el tooltip debajo del elemento */
+  font-size: 15px; /* Tamaño de fuente Pequeño */
+}
+
+.formBlock{
+ font-size: 20px;
+ padding-left: 30px;
+ padding-right:30px;
+ 
+}
+.cell{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.infoImg{
+  width: 47px;
+  height: 67px;
+}
+
+.text3{
+  font-size: 20px;
+}
+
+
+
+}
+
+/* Media query para escritorios y pantallas grandes */
+@media (min-width: 791px) and (max-width: 915px) {
+  footer{
+      padding: 4px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+       
+  }
+
+  footer img {
+      width:  90px; /* Ancho de la imagen en "em" */
+      height: 90px; /* Altura de la imagen en "em" */
+     
+  }
+
+  footer a {
+      font-size: 19px;
+  }
+  
+  footer p {
+      font-size: 20px;
+  }
+
+  footer .content2 {
+      position: absolute; /* Cambiar a posición absoluta */
+      display: flex;
+      align-items: center;
+      bottom: 15px;
+  }
+
+  .imagefoot {
+      width: 60px;
+      height: 60px;
+      align-items: center; /* Alineación de los elementos al centro */
+      margin-bottom: 0%;
+      margin-right: 0px;
+      
+  }
+
+  .tooltip::before {
+     
+      font-size: 22px; /* Tamaño de fuente del tooltip en "em" */
+  }
+
+  .TopImg{
+      height: 550px;
+      width: 100%;
+ }
+
+ .text2{
+  text-align: center;
+  margin-top: 16px;
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 40px;
+}
+
+ .shortImg{
+     text-align: center;
+     margin-top: 1px; /* Ajusta el margen según tus necesidades */
+ }
+ 
+ .circleImg{
+     height: 200px;
+     width: 200px;
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-top: 10px;
+     margin-bottom: 80px;
+     border-radius: 100px;
+ }
+
+ .tooltip2::before {
+ 
+  top: 227px; /* Colocar el tooltip debajo del elemento */
+  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+  font-size: 16px; /* Tamaño de fuente Pequeño */
+  align-items: center; /* Alineación de los elementos al centro */
+  
+}
+
+ .text {
+  margin-left: 5px; /* Ajusta el margen según tus necesidades */
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 17px;
+ }
+
+ .schImg {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Para mantener la proporción original */
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+  margin-top: 5px; /* Ajusta el margen según tus necesidades */
+  height: 70px;
+  width: 110px;
+  font-size: 18px;
+  padding-left: .5px;
+  padding-right: .5px;
+  padding-top:10px;
+
+}
+
+.articles{
+  height: 210px;
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+
+}
+
+.tooltip3::before {
+  top: -67px; /* Colocar el tooltip debajo del elemento */
+  font-size: 17px; /* Tamaño de fuente Pequeño */
+}
+
+.formBlock{
+ font-size: 22px;
+ padding-left: 30px;
+ padding-right:30px;
+ 
+}
+.cell{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.infoImg{
+  width: 57px;
+  height: 77px;
+}
+
+.text3{
+  font-size: 25px;
+}
+
+
+}
+
+@media (min-width: 916px) and (max-width: 2100px) {
+  footer {
+      position:fixed;
+  }
+  footer a {
+      font-size: 1.1em;
+      margin-top: 0px;
+  }
+
+  
+  footer p {
+      font-size: 1em;
+  }
+
+  footer img {
+      width: 5.3em; /* Ancho de la imagen en "em" */
+      height: 5.3em; /* Altura de la imagen en "em" */
+     
+  }
+  .imagefoot {
+      width: 3.5em; /* Ancho de la imagen en "em" */
+      height: 3.5em; /* Altura de la imagen en "em" */
+      padding-bottom: .01px;
+      
+  }
+  
+  .tooltip::before {
+     
+      font-size: 15px; /* Tamaño de fuente del tooltip en "em" */
+  }
+
+  .TopImg{
+      height: 480px;
+      width: 100%;
+ }
+
+ .text2{
+  text-align: center;
+  margin-top: 16px;
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 45px;
+}
+
+ .shortImg{
+     text-align: center;
+     margin-top: 1px; /* Ajusta el margen según tus necesidades */
+     
+ }
+ 
+ .circleImg{
+     height: 80px;
+     width: 80px;
+     margin-left: 5px;
+     margin-right: 20px;
+     margin-top: 0px;
+     margin-bottom: 90px;
+     border-radius: 100px;
+ }
+
+ .tooltip2::before {
+ 
+  top: 100px; /* Colocar el tooltip debajo del elemento */
+  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+  font-size: 12px; /* Tamaño de fuente Pequeño */
+  align-items: center; /* Alineación de los elementos al centro */
+  
+}
+
+ .text {
+  padding-top: 10px;
+  margin-left: 5px; /* Ajusta el margen según tus necesidades */
+  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
+  font-size: 19px;
+  margin-right: 5px;
+ }
+
+ .schImg {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Para mantener la proporción original */
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
+}
+
+.btn {
+  margin-top: 5px; /* Ajusta el margen según tus necesidades */
+  height: 75px;
+  width: 115px;
+  font-size: 19px;
+  padding-left: .5px;
+  padding-right: .5px;
+  padding-top:10px;
+
+}
+
+.articles{
+  height: 220px;
+  width: 210px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 190px;
+  border-radius: 20px;
+
+}
+
+
+.tooltip3::before {
+  top: -65px; /* Colocar el tooltip debajo del elemento */
+  font-size: 17px; /* Tamaño de fuente Pequeño */
+}
+
+.formBlock{
+ font-size: 20px;
+ padding-left: 50px;
+ padding-right:50px;
+ 
+}
+.cell{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.infoImg{
+  width: 40px;
+  height: 65px;
+}
+
+.text3{
+  font-size: 23px;
+}
+
+
+
+
+ 
+}
