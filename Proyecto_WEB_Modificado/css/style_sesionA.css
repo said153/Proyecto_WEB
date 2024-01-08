@@ -110,18 +110,16 @@ body {
           font-size: 14px; /* Tamaño de fuente de 14px */
           color: #ffffff; /* Color del texto en blanco */
           width: 100%; /* Ancho del pie de página al 100% */
-          height: 90px; /* Altura del pie de página de 90px */
-          bottom: 0; /* Posicionar en la parte inferior */
           border: 4px solid #000000; /* Agregar un borde sólido de 1px en color blanco */
           border-top-left-radius: 40px; /* Radio circular en la esquina superior izquierda */
           border-top-right-radius: 40px; /* Radio circular en la esquina superior derecha */
           border-bottom: 1px solid #8C3E69; /* Borde recto en la parte inferior */
-          height: auto;
           display: flex; /* Utilizamos flexbox para organizar los elementos dentro del footer */
           justify-content: space-between; /* Distribuir los elementos de forma equitativa */
           align-items: center; /* Alinear los elementos verticalmente al centro */
           padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
-          position: sticky;
+          position: fixed; /* Cambiado a fixed para que esté siempre visible */
+          bottom: 0; /* Posicionar en la parte inferior */
       }
   
       /* Estilos para el contenido del pie de página */
@@ -354,7 +352,7 @@ margin-top: 35%;
 
 
   .images{
-    padding-right: 20px;
+    text-align: center;
   }
  
  .shortImg{
@@ -363,16 +361,15 @@ margin-top: 35%;
  }
  
  .circleImg{
-     height: 55px;
-     width: 55px;
-     margin-left: 3px;
-     margin-right: 3px;
-     margin-top: 2px;
-     margin-bottom: 55px;
-     border-radius: 100px;
-     border: .2px solid #ffffff;
-     
- }
+  height: 60px;
+  width: 60px;
+  padding-top: 1px;
+  border-radius: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: .2px solid #ffffff;
+  
+}
 
 
  .schImg {
@@ -385,9 +382,9 @@ margin-top: 35%;
 
 .tooltip2::before {
  
-  top: 7px; /* Colocar el tooltip debajo del elemento */
+  top: 30px; /* Colocar el tooltip debajo del elemento */
   border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
-  font-size: 6px; /* Tamaño de fuente Pequeño */
+  font-size: 9px; /* Tamaño de fuente Pequeño */
   border: .5px solid #ffffff;
 }
 
@@ -395,18 +392,18 @@ margin-top: 35%;
   text-align: left;
   font-size: 6px;
   padding-left: 10px;
-  padding-bottom: 300px;
-  margin-top: -80%;
   color:beige;
+  margin-top: -315px;
+  margin-bottom: 250px;
   font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
 
 }
 
 
 .sha{  
- width: 170px;
-  height: 180px;
-margin-top: 35%;
+ width: 190px;
+  height: 200px;
+margin-top: 50%;
 
 }
 
@@ -454,111 +451,65 @@ margin-top: 35%;
       font-size: 13px; /* Tamaño de fuente del tooltip */
   }
 
-  .TopImg{
-      height: 300px;
-      width: 100%;
- }
-
- .text2{
-  text-align: center;
-  margin-top: 16px;
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 25px;
-}
-
+  
+  .images{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+ 
  .shortImg{
      text-align: center;
      margin-top: 1px; /* Ajusta el margen según tus necesidades */
  }
  
  .circleImg{
-     height: 120px;
-     width: 120px;
-     margin-left: 15px;
-     margin-right: 15px;
-     margin-top: 10px;
-     margin-bottom: 60px;
-     border-radius: 100px;
- }
-
- .tooltip2::before {
- 
-  top: 139px; /* Colocar el tooltip debajo del elemento */
-  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
-  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
-  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
-  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
-  font-size: 10px; /* Tamaño de fuente Pequeño */
-  align-items: center; /* Alineación de los elementos al centro */
+  height: 70px;
+  width: 70px;
+  padding-top: 1px;
+  border-radius: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: .2px solid #ffffff;
   
 }
 
-
- .text {
-  margin-left: 5px; /* Ajusta el margen según tus necesidades */
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 10px;
- }
 
  .schImg {
   width: 50%; /* Ajusta el ancho según tus necesidades */
   height: auto; /* Para mantener la proporción original */
   border-radius: 20px;
   transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
-}
-
-.btn {
-  margin-top: 5px; /* Ajusta el margen según tus necesidades */
-  height: 40px;
-  width: 55px;
-  font-size: 10px;
-  padding-left: .5px;
-  padding-right: .5px;
-  padding-top:3px;
-
-}
-
-.articles{
-  height: 120px;
-  width: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 90px;
-  border-radius: 15px;
-
-}
-
-
-
-.tooltip3::before {
-  top: -45px; /* Colocar el tooltip debajo del elemento */
-  font-size: 10px; /* Tamaño de fuente Pequeño */
-}
-
-.formBlock{
- font-size: 15px;
- padding-left: 28px;
- padding-right: 28px;
  
 }
-.cell{
-  padding-left: 40px;
-  padding-right: 40px;
-}
 
-.infoImg{
-  width: 27px;
-  height: 47px;
-}
-
-.text3{
-  font-size: 14px;
-}
-
-
-
+.tooltip2::before {
  
+  top: 30px; /* Colocar el tooltip debajo del elemento */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-size: 9px; /* Tamaño de fuente Pequeño */
+  border: .5px solid #ffffff;
+}
+
+.adminText{
+  text-align: left;
+  font-size: 6px;
+  padding-left: 10px;
+  color:beige;
+  margin-top: -335px;
+  margin-bottom: 250px;
+  font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
+
+}
+
+
+.sha{  
+ width: 210px;
+  height: 220px;
+margin-top: 25%;
+
+}
+
 
 }
 
@@ -592,104 +543,63 @@ margin-top: 35%;
   }
 
 
-  .TopImg{
-      height: 450px;
-      width: 100%;
- }
-
- .text2{
-  text-align: center;
-  margin-top: 16px;
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 36px;
-}
-
+  
+  .images{
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+ 
  .shortImg{
      text-align: center;
      margin-top: 1px; /* Ajusta el margen según tus necesidades */
  }
  
  .circleImg{
-     height: 190px;
-     width: 190px;
-     margin-left: 15px;
-     margin-right: 15px;
-     margin-top: 10px;
-     margin-bottom: 70px;
-     border-radius: 100px;
- }
-
- .tooltip2::before {
- 
-  top: 217px; /* Colocar el tooltip debajo del elemento */
-  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
-  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
-  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
-  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
-  font-size: 13px; /* Tamaño de fuente Pequeño */
-  align-items: center; /* Alineación de los elementos al centro */
+  height: 100px;
+  width: 100px;
+  padding-top: 1px;
+  border-radius: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: .2px solid #ffffff;
   
 }
 
- .text {
-  margin-left: 5px; /* Ajusta el margen según tus necesidades */
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 15px;
- }
 
  .schImg {
   width: 50%; /* Ajusta el ancho según tus necesidades */
   height: auto; /* Para mantener la proporción original */
   border-radius: 20px;
   transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
-}
-
-.btn {
-  margin-top: 5px; /* Ajusta el margen según tus necesidades */
-  height: 50px;
-  width: 80px;
-  font-size: 15px;
-  padding-left: .5px;
-  padding-right: .5px;
-  padding-top:3px;
-
-}
-
-.articles{
-  height: 200px;
-  width: 180px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 170px;
-  border-radius: 15px;
-
-}
-
-
-.tooltip3::before {
-  top: -60px; /* Colocar el tooltip debajo del elemento */
-  font-size: 15px; /* Tamaño de fuente Pequeño */
-}
-
-.formBlock{
- font-size: 20px;
- padding-left: 30px;
- padding-right:30px;
  
 }
-.cell{
-  padding-left: 50px;
-  padding-right: 50px;
+
+.tooltip2::before {
+ 
+  top: 22px; /* Colocar el tooltip debajo del elemento */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-size: 16px; /* Tamaño de fuente Pequeño */
+  border: .5px solid #ffffff;
 }
 
-.infoImg{
-  width: 47px;
-  height: 67px;
+.adminText{
+  text-align: left;
+  font-size: 6px;
+  padding-left: 10px;
+  color:beige;
+  margin-top: -475px;
+  margin-bottom: 250px;
+  font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
+
 }
 
-.text3{
-  font-size: 20px;
+
+.sha{  
+ width: 320px;
+  height: 330px;
+margin-top: 30%;
+
 }
 
 
@@ -738,50 +648,31 @@ margin-top: 35%;
       font-size: 22px; /* Tamaño de fuente del tooltip en "em" */
   }
 
-  .TopImg{
-      height: 550px;
-      width: 100%;
- }
 
- .text2{
-  text-align: center;
-  margin-top: 16px;
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 40px;
-}
+  .images{
+    text-align: center;
+    padding-top: 320px;
+    padding-bottom: 140px;
 
+  }
+ 
  .shortImg{
      text-align: center;
      margin-top: 1px; /* Ajusta el margen según tus necesidades */
  }
  
- .circleImg{
-     height: 200px;
-     width: 200px;
-     margin-left: 15px;
-     margin-right: 15px;
-     margin-top: 10px;
-     margin-bottom: 80px;
-     border-radius: 100px;
- }
 
- .tooltip2::before {
- 
-  top: 227px; /* Colocar el tooltip debajo del elemento */
-  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
-  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
-  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
-  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
-  font-size: 16px; /* Tamaño de fuente Pequeño */
-  align-items: center; /* Alineación de los elementos al centro */
+ .circleImg{
+  height: 100px;
+  width: 100px;
+  padding-top: 1px;
+  border-radius: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: .2px solid #ffffff;
   
 }
 
- .text {
-  margin-left: 5px; /* Ajusta el margen según tus necesidades */
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 17px;
- }
 
  .schImg {
   width: 50%; /* Ajusta el ancho según tus necesidades */
@@ -790,51 +681,31 @@ margin-top: 35%;
   transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
 }
 
-.btn {
-  margin-top: 5px; /* Ajusta el margen según tus necesidades */
-  height: 70px;
-  width: 110px;
-  font-size: 18px;
-  padding-left: .5px;
-  padding-right: .5px;
-  padding-top:10px;
+
+.tooltip2::before {
+  top: 15px; /* Colocar el tooltip debajo del elemento */
+  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
+  font-size: 18px; /* Tamaño de fuente Pequeño */
+  border: .5px solid #ffffff;
+}
+
+.adminText{
+  text-align: left;
+  font-size: 6px;
+  padding-left: 10px;
+  color:beige;
+  margin-top: -645px;
+  margin-bottom: 250px;
+  font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
 
 }
 
-.articles{
-  height: 210px;
-  width: 200px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  border-radius: 20px;
 
-}
+.sha{  
+ width: 380px;
+  height: 390px;
+margin-top: 40%;
 
-.tooltip3::before {
-  top: -67px; /* Colocar el tooltip debajo del elemento */
-  font-size: 17px; /* Tamaño de fuente Pequeño */
-}
-
-.formBlock{
- font-size: 22px;
- padding-left: 30px;
- padding-right:30px;
- 
-}
-.cell{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.infoImg{
-  width: 57px;
-  height: 77px;
-}
-
-.text3{
-  font-size: 25px;
 }
 
 
@@ -871,107 +742,70 @@ margin-top: 35%;
       font-size: 15px; /* Tamaño de fuente del tooltip en "em" */
   }
 
-  .TopImg{
-      height: 480px;
-      width: 100%;
- }
+  .images{
+    text-align: right;
+    padding-bottom: 50px;
+  }
 
- .text2{
-  text-align: center;
-  margin-top: 16px;
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 45px;
-}
-
- .shortImg{
-     text-align: center;
-     margin-top: 1px; /* Ajusta el margen según tus necesidades */
-     
- }
+  .shortImg{
+    text-align: center;
+    margin-top: 1px; /* Ajusta el margen según tus necesidades */
+  }
  
+
  .circleImg{
-     height: 80px;
-     width: 80px;
-     margin-left: 5px;
-     margin-right: 20px;
-     margin-top: 0px;
-     margin-bottom: 90px;
-     border-radius: 100px;
- }
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  border-radius: 100px;
 
- .tooltip2::before {
- 
-  top: 100px; /* Colocar el tooltip debajo del elemento */
-  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
-  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
-  border-radius: 5px; /* Radio de curvatura para los bordes del tooltip */
-  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
-  font-size: 12px; /* Tamaño de fuente Pequeño */
-  align-items: center; /* Alineación de los elementos al centro */
-  
 }
 
- .text {
-  padding-top: 10px;
-  margin-left: 5px; /* Ajusta el margen según tus necesidades */
-  font-family: 'Vogue', sans-serif; /* Fuente de estilo Vogue */
-  font-size: 19px;
-  margin-right: 5px;
- }
 
- .schImg {
-  width: 50%; /* Ajusta el ancho según tus necesidades */
+
+.schImg {
+  width: 30%; /* Ajusta el ancho según tus necesidades */
   height: auto; /* Para mantener la proporción original */
   border-radius: 20px;
   transition: transform 0.5s, filter 0.5s; /* Agrega transiciones suaves */
-}
-
-.btn {
-  margin-top: 5px; /* Ajusta el margen según tus necesidades */
-  height: 75px;
-  width: 115px;
-  font-size: 19px;
-  padding-left: .5px;
-  padding-right: .5px;
-  padding-top:10px;
-
-}
-
-.articles{
-  height: 220px;
-  width: 210px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 190px;
-  border-radius: 20px;
-
-}
-
-
-.tooltip3::before {
-  top: -65px; /* Colocar el tooltip debajo del elemento */
-  font-size: 17px; /* Tamaño de fuente Pequeño */
-}
-
-.formBlock{
- font-size: 20px;
- padding-left: 50px;
- padding-right:50px;
  
 }
-.cell{
-  padding-left: 80px;
-  padding-right: 80px;
+
+
+.tooltip2::before {
+  content: attr(data-tooltip2); /* Contenido del tooltip obtenido del atributo data-tooltip2 */
+  display: none; /* Ocultar el tooltip inicialmente */
+  position: absolute; /* Posición absoluta para el tooltip */
+  top: 28px; /* Colocar el tooltip debajo del elemento */
+  left: 50%; /* Ajustar la posición horizontal para que el tooltip esté centrado */
+  transform: translateX(-50%); /* Centrar horizontalmente el tooltip */
+  padding: 5px 10px; /* Espaciado interno del tooltip */
+  background-color: #8C3E69; /* Color de fondo del tooltip */
+  color: #ffffff; /* Color del texto del tooltip */
+  border-radius: 10px; /* Radio de curvatura para los bordes del tooltip */
+  font-family: 'Literata', sans-serif; /* Letra Literata descargada de Google */
+  font-size: small; /* Tamaño de fuente Pequeño */
+  align-items: center; /* Alineación de los elementos al centro */
 }
 
-.infoImg{
-  width: 40px;
-  height: 65px;
+.adminText{
+  text-align: left;
+  font-size: 190px;
+  padding-left: 20px;
+  margin-top: -26%;
+  color:beige;
+  font-family: 'Varsity', sans-serif; /* Fuente de estilo Varsity */;
+
+
 }
 
-.text3{
-  font-size: 23px;
+.sha{  
+  width: 400px;
+   height: 410px;
+ margin-top: 3%;
+
 }
 
 
