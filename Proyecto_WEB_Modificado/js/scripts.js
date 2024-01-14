@@ -232,3 +232,39 @@ function mostrarSeccion(idSeccion) {
   }
 }
 
+
+
+//aca agregue el CRUD
+function realizarAccion(accion) {
+    // Aquí puedes agregar lógica adicional según la acción requerida
+    // Por ejemplo, podrías enviar una solicitud AJAX al servidor PHP
+
+    // Código de ejemplo con jQuery para una solicitud AJAX
+    $.ajax({
+      type: 'POST',
+      url: 'Sesion_admin.php',
+      data: { accion: accion },
+      success: function (response) {
+          // Manejar la respuesta del servidor, si es necesario
+          console.log(response);
+
+          // Ejemplo de manejo de respuesta para la acción READ
+          if (accion === 'READ') {
+              // Supongamos que el servidor devuelve un JSON con los datos
+              // Mostramos los datos en la consola por ahora
+              console.log('Datos obtenidos:', JSON.parse(response));
+          }
+          // Código de ejemplo para manejar respuestas CREATE, UPDATE y DELETE
+        if (accion === 'CREATE' || accion === 'UPDATE' || accion === 'DELETE') {
+          // Supongamos que el servidor devuelve un mensaje indicando el resultado de la operación
+          console.log('Operación', accion, 'completada:', response);
+        }
+      },
+      error: function (error) {
+          console.error(error);
+      }
+  });
+}
+
+
+
