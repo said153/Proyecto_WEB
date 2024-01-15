@@ -17,7 +17,7 @@ mysqli_stmt_execute($stmt);
 $resultado = mysqli_stmt_get_result($stmt);
 
 if ($resultado->num_rows > 0) {
-    header("Location: Sesion_admin.php");
+    header("Location: prueba.php");
     exit();
 
 } else {
