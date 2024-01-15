@@ -24,25 +24,21 @@
        </div>
     </nav>
     <section>
-        <form>
+        <form action="../php/conexionUsuario.php" method="post">
             <h2>Login User</h2>
             <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" required>
+                <input type="number" name="boleta" required>
                 <label for="">Boleta</label>
             </div>
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input type="password" required>
+                <input type="password" name="pass" required>
                 <label for="">Contraseña</label>
             </div>
-           <!-- <div class="forget">
-                <label for=""><input type="checkbox">Recordar Contraseña </label><br>
-                <a href="#"> Forget password</a>
-            </div>-->
             <button>Entrar</button>
             <div class="register">
-                <p>¿No tienes una cuenta? <a href="Index.html">Registro</a></p>
+                <p>¿No tienes una cuenta? <a href="form_usuario.html">Registro</a></p>
             </div>
         </form>
     </section>
