@@ -21,6 +21,12 @@
     src: url('../Fonts/Vidaloka-Regular.ttf') format('truetype');
 }
 
+/*Bebas*/
+@font-face {
+    font-family: 'Bebas';
+    src: url('../Fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
 /*Varsity*/
 @font-face {
     font-family: 'Varsity';
@@ -139,14 +145,16 @@
     margin-top: 1px;
     margin-left: 10px;
     margin-right: 10px;
-    font-family: 'Vidaloka', sans-serif; /* Fuente de estilo Vogue */
+    font-family: 'Bebas', sans-serif; /* Fuente de estilo Vogue */
    font-size: 18px;
    color: rgb(0, 0, 0);
-   
+   font-weight: bold; /* Agregando negrita */
 }
 
 .formBlock .bdtext{
-    font-family: 'Varsity', sans-serif;
+    font-family: 'Vidaloka' , sans-serif;
+    color: #122035;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
 
 
@@ -539,8 +547,11 @@
     }
 
     .formBlock .bdtext{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Vidaloka' , sans-serif;
+        color: #122035;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
     }
+    
 
 
 }
@@ -689,8 +700,11 @@
     font-size: 10px;
 }
 .formBlock .bdtext{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Vidaloka' , sans-serif;
+    color: #122035;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
+
 
   }
   
@@ -839,8 +853,11 @@
 }
 
 .formBlock .bdtext{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Vidaloka' , sans-serif;
+    color: #122035;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
+
 
 
 
@@ -1124,8 +1141,11 @@
 }
 
 .formBlock .bdtext{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Vidaloka' , sans-serif;
+    color: #122035;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
+
 
   }
 
@@ -1263,7 +1283,9 @@
 }
 
 .formBlock .bdtext{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Vidaloka' , sans-serif;
+    color: #122035;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
 
 
