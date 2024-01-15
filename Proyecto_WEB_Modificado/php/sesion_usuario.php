@@ -68,13 +68,13 @@
 
             echo "<form class='formBlock'>";
             while ($fila = mysqli_fetch_assoc($resultado)) {
-                echo "<label for='boleta" . $fila['boleta'] . "'>Boleta: " . $fila['boleta'] . "</label><br>";
-                echo "<label for='nombres" . $fila['nombreAlu'] . "'>Nombre(s): " . $fila['nombreAlu'] . "</label><br>";
-                echo "<label for='apellidoPaterno" . $fila['apePatAlu'] . "'>Apellido Paterno: " . $fila['apePatAlu'] . "</label><br>";
-                echo "<label for='apellidoMaterno" . $fila['apeMatAlu'] . "'>Apellido Materno: " . $fila['apeMatAlu'] . "</label><br>";
-                echo "<label for='fechaNacimiento" . $fila['fechaNacAlu'] . "'>Fecha de Nacimiento: " . $fila['fechaNacAlu'] . "</label><br>";
-                echo "<label for='curp" . $fila['curpAlu'] . "'>Curp: " . $fila['curpAlu'] . "</label><br>";
-                echo "<label for='genero" . $fila['generoAlu'] . "'>Genero: " . $fila['generoAlu'] . "</label><br>";
+                echo "<label for='boleta" . $fila['boleta'] . "'>Boleta: <span class='bdtext'> " . $fila['boleta'] . "</label><br>";
+                echo "<label for='nombres" . $fila['nombreAlu'] . "'>Nombre(s): <span class='bdtext'> " . $fila['nombreAlu'] . "</label><br>";
+                echo "<label for='apellidoPaterno" . $fila['apePatAlu'] . "'>Apellido Paterno: <span class='bdtext'> " . $fila['apePatAlu'] . "</label><br>";
+                echo "<label for='apellidoMaterno" . $fila['apeMatAlu'] . "'>Apellido Materno: <span class='bdtext'> " . $fila['apeMatAlu'] . "</label><br>";
+                echo "<label for='fechaNacimiento" . $fila['fechaNacAlu'] . "'>Fecha de Nacimiento: <span class='bdtext'> " . $fila['fechaNacAlu'] . "</label><br>";
+                echo "<label for='curp" . $fila['curpAlu'] . "'>Curp: <span class='bdtext'>  " . $fila['curpAlu'] . "</label><br>";
+                echo "<label for='genero" . $fila['generoAlu'] . "'>Genero: <span class='bdtext'>  " . $fila['generoAlu'] . "</label><br>";
             }
             echo "</form>";
 
@@ -96,13 +96,13 @@
 
             echo "<form class='formBlock'>";
             while ($fila = mysqli_fetch_assoc($resultado)) {
-                echo "<label for='calle" . $fila['calleCon'] . "'>Calle: " . $fila['calleCon'] . "</label><br>";
-                echo "<label for='numero" . $fila['numCon'] . "'>Número: " . $fila['numCon'] . "</label><br>";
-                echo "<label for='colonia" . $fila['coloniaCon'] . "'>Colonia: " . $fila['coloniaCon'] . "</label><br>";
-                echo "<label for='alcaldia" . $fila['alcaldiaCon'] . "'>Alcaldía: " . $fila['alcaldiaCon'] . "</label><br>";
-                echo "<label for='codigoPostal" . $fila['codPosCon'] . "'>Código Postal: " . $fila['codPosCon'] . "</label><br>";
-                echo "<label for='telefono" . $fila['telCon'] . "'>Teléfono: " . $fila['telCon'] . "</label><br>";
-                echo "<label for='correoElectronico" . $fila['correoCon'] . "'>Correo electrónico: " . $fila['correoCon'] . "</label><br>";
+                echo "<label for='calle" . $fila['calleCon'] . "'>Calle: <span class='bdtext'> " . $fila['calleCon'] . "</label><br>";
+                echo "<label for='numero" . $fila['numCon'] . "'>Número: <span class='bdtext'>" . $fila['numCon'] . "</label><br>";
+                echo "<label for='colonia" . $fila['coloniaCon'] . "'>Colonia: <span class='bdtext'>" . $fila['coloniaCon'] . "</label><br>";
+                echo "<label for='alcaldia" . $fila['alcaldiaCon'] . "'>Alcaldía: <span class='bdtext'>" . $fila['alcaldiaCon'] . "</label><br>";
+                echo "<label for='codigoPostal" . $fila['codPosCon'] . "'>Código Postal: <span class='bdtext'>" . $fila['codPosCon'] . "</label><br>";
+                echo "<label for='telefono" . $fila['telCon'] . "'>Teléfono: <span class='bdtext'>" . $fila['telCon'] . "</label><br>";
+                echo "<label for='correoElectronico" . $fila['correoCon'] . "'>Correo electrónico: <span class='bdtext'>" . $fila['correoCon'] . "</label><br>";
             }
             echo "</form>";
 
@@ -124,10 +124,10 @@
 
             echo "<form class='formBlock'>";
             while ($fila = mysqli_fetch_assoc($resultado)) {
-                echo "<label for='escuelaProcedencia" . $fila['escProc'] . "'>Escuela de procedencia: " . $fila['escProc'] . "</label><br>";
-                echo "<label for='entidadProcedencia" . $fila['entFedProc'] . "'>Entidad Federativa de Procedencia: " . $fila['entFedProc'] . "</label><br>";
-                echo "<label for='promedio" . $fila['promedioProc'] . "'>Promedio: " . $fila['promedioProc'] . "</label><br>";
-                echo "<label" . $fila['opcionProc'] . "'>ESCOM fue tu: " . $fila['opcionProc'] . "</label><br>";
+                echo "<label for='escuelaProcedencia" . $fila['escProc'] . "'>Escuela de procedencia: <span class='bdtext'> " . $fila['escProc'] . "</label><br>";
+                echo "<label for='entidadProcedencia" . $fila['entFedProc'] . "'>Entidad Federativa de Procedencia: <span class='bdtext'> " . $fila['entFedProc'] . "</label><br>";
+                echo "<label for='promedio" . $fila['promedioProc'] . "'>Promedio: <span class='bdtext'>  " . $fila['promedioProc'] . "</label><br>";
+                echo "<label" . $fila['opcionProc'] . "'>ESCOM fue tu:  <span class='bdtext'> " . $fila['opcionProc'] . "</label><br>";
             }
             echo "</form>";
 
