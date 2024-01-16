@@ -22,47 +22,47 @@ function validarFormulario() {
 
   // if (!regex3.test(contraseña)) {
   //   alert("El campo de contraseña no es válido.");
-  //   event.preventDefault();
+  //  preventDefault();
   // }
     
   if (!regex1.test(boleta)) {
     alert("El campo de boleta no es válido.");
-    event.preventDefault();
+    preventDefault();
   }
 
   if (!regex.test(nombre)) {
     alert("El campo de nombre solo debe contener letras.");
-    event.preventDefault();
+   preventDefault();
   }
 
   if (!regex.test(apellidoPaterno)) {
     alert("El campo de apellido paterno solo debe contener letras.");
-    event.preventDefault();
+    preventDefault();
   }
 
   if (!regex.test(apellidoMaterno)) {
     alert("El campo de apellido materno solo debe contener letras.");
-    event.preventDefault();
+    preventDefault();
   }
 
   if (!regex2.test(curp)) {
       alert("El campo de CURP no es válido.");
-      event.preventDefault();
+      preventDefault();
     }
 
   if (regex.test(cp)) {
       alert("El campo de código postal solo debe contener números.");
-      event.preventDefault();
+      preventDefault();
   }
 
   if (regex.test(tel)) {
       alert("El campo de teléfono solo debe contener números.");
-      event.preventDefault();
+      preventDefault();
   }
 
   if (fechaActual.getFullYear() - fechaNacimiento.getFullYear() < 17) {
     alert("Asegurate que la fecha de nacimiento sea correcta.");
-    event.preventDefault();
+    preventDefault();
   }
 
    const output = `Boleta: ${boleta}\nNombre: ${nombre}\nApellido Paterno: ${apellidoPaterno}\nApellido Materno: ${apellidoMaterno}\nFecha de Nacimiento: ${fechaNacimiento}\nCURP: ${curp}`;
@@ -124,7 +124,7 @@ function validarFormulario() {
  
   if (window.confirm("¿Quieres modificar?")) {
     alert("Modifica tus datos, no olvides presionar registrar al terminar.");
-    event.preventDefault(); 
+    preventDefault(); 
   } 
   else {
   alert("Tus datos fueron registrados correctamente.");
