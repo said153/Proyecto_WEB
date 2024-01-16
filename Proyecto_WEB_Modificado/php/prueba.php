@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style_CRUD.css">
     <!-- <link rel="stylesheet" href="../css/style_sesionA.css"> -->
     <script src="https://kit.fontawesome.com/592deb2de1.js" crossorigin="anonymous"></script>
     <title>Administrador</title>
@@ -31,52 +32,52 @@
         </h1>
     </div> -->
 
-    <div class="container-fluid row">
-            <form class="col-4 p-3" id="registroForm" method="POST" onsubmit="return validarFormulario()">
-                <h2>Identidad</h2>
+    <div class="container-fluid row tdo ">
+            <form class="col-4 p-3 tableForm" id="registroForm" method="POST" onsubmit="return validarFormulario()">
+                <h2 class="tit">Identidad</h2>
                 <fieldset class="Identidad"> 
                         <label for="boleta">Boleta:</label>
-                        <input type="text" class="form-control" id="boleta" name="boleta" minlength="10" maxlength="10">
+                        <input type="text" class="form-control barra" id="boleta" name="boleta" minlength="10" maxlength="10">
                         <label for="nombre">Nombre(s):</label>  
-                        <input type="text" class="form-control" id="nombre" name="nombre" >
+                        <input type="text" class="form-control barra" id="nombre" name="nombre" >
                         <label for="a_paterno">Apellido Paterno:</label>
-                        <input type="text" class="form-control" id="a_parterno" name="a_paterno" >
+                        <input type="text" class="form-control barra" id="a_parterno" name="a_paterno" >
                         <label for="a_maternos">Apellido Materno:</label>
-                        <input type="text" class="form-control" id="a_materno" name="a_materno" >
+                        <input type="text" class="form-control barra " id="a_materno" name="a_materno" >
                         <label for="nacimiento">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control" id="nacimiento" name="nacimiento" >
+                        <input type="date" class="form-control barra" id="nacimiento" name="nacimiento" >
                         <label for="curp">CURP:</label>
-                        <input type="text" class="form-control" id="curp" name="curp" minlength="18" maxlength="18" >
+                        <input type="text" class="form-control barra" id="curp" name="curp" minlength="18" maxlength="18" >
                         <!-- Genero con bootstrap -->
                         <div>
                             <p>Selecciona tu Género:</p>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                        <div class="form-check form-check-inline opt">
+                            <input class="form-check-input ball" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label " for="inlineRadio1">Hombre</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <input class="form-check-input ball" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">Mujer</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <input class="form-check-input ball" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">Otro</label>
                         </div>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario ">
                             <label>A fin de considerar sus necesidades y atenderlas, requerimos saber si usted es una persona con:</label>
                             <div class="formulario-verificación">
-                                <input class="form-check-input" type="checkbox" id="discapacidadAuditiva" name="discapacidad[]" value="auditiva">
+                                <input class="form-check-input square" type="checkbox" id="discapacidadAuditiva" name="discapacidad[]" value="auditiva">
                                 <label class="form-check-label" for="discapacidadAuditiva">Discapacidad auditiva</label>
                             </div>
                             <div class="formulario-verificación">
-                                <input class="form-check-input" type="checkbox" id="discapacidadVisual" name="discapacidad[]" value="visual">
+                                <input class="form-check-input square" type="checkbox" id="discapacidadVisual" name="discapacidad[]" value="visual">
                                 <label class="form-check-label" for="discapacidadVisual">Discapacidad visual</label>
                             </div>
                         
                             <!-- Discapacidad motriz la que agrupe -->
                             <div class="formulario-verificación">
-                                <input class="form-check-input" type="checkbox" id="discapacidadMotriz" name="discapacidad[]" value="motriz">
+                                <input class="form-check-input square" type="checkbox" id="discapacidadMotriz" name="discapacidad[]" value="motriz">
                                 <label class="form-check-label" for="discapacidadMotriz">Discapacidad motriz</label>
                         
                                 <!-- Opciones específicas de discapacidad motriz -->
@@ -101,26 +102,26 @@
                             <!-- aquí puse la otra discapacidad -->
                         
                             <div class="formulario-verificación">
-                                <input class="form-check-input" type="checkbox" id="otraDiscapacidad" name="discapacidad[]" value="otra">
+                                <input class="form-check-input square" type="checkbox" id="otraDiscapacidad" name="discapacidad[]" value="otra">
                                 <label class="form-check-label" for="otraDiscapacidad">Otra opción</label>
                                 <input type="text" class="form-control" id="otraDiscapacidadText" name="otraDiscapacidad" placeholder="Especifica tu discapacidad" style="display: none;">
                             </div>
                         </div>
                         <label for="pass">Contraseña (Debe contener entre 8 a 10 caracteres con al menos un número, una letra minúscula y una letra mayúscula):</label>
-                        <input type="password" class="form-control" id="pass" name="pass" minlength="8" maxlength="10">
+                        <input type="password" class="form-control barra" id="pass" name="pass" minlength="8" maxlength="10">
 
                 </fieldset>
 
-                <h2>Contacto</h2>
+                <h2 class="tit">Contacto</h2>
                 <fieldset>
                     <label for="calle">Calle:</label>
-                    <input type="text" class="form-control" id="calle" name="calle" >
+                    <input type="text" class="form-control barra" id="calle" name="calle" >
                     <label for="numero">Número:</label>
-                    <input type="number" class="form-control" id="numero" name="numero" maxlength="4" >
+                    <input type="number" class="form-control barra" id="numero" name="numero" maxlength="4" >
                     <label for="colonia">Colonia:</label>
-                    <input type="text" class="form-control" id="colonia" name="colonia" >
+                    <input type="text" class="form-control barra" id="colonia" name="colonia" >
                     <label for="">Alcadía:</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select barra" aria-label="Default select example">
                         <option selected>Elige una opcion</option>
                         <option value="1">Álvaro Obregón</option>
                         <option value="2">Azcapotzalco</option>
@@ -141,17 +142,17 @@
                     </select>
                     <br>
                     <label for="cp">Código Postal:</label>
-                    <input type="text" class="form-control" id="cp" name="cp" minlength="5" maxlength="5" >
+                    <input type="text" class="form-control barra" id="cp" name="cp" minlength="5" maxlength="5" >
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" class="form-control" name="telefono" id="telefono" minlength="10" maxlength="10">
+                    <input type="tel" class="form-control barra" name="telefono" id="telefono" minlength="10" maxlength="10">
                     <label for="numero">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" >
+                    <input type="email" class="form-control barra" id="email" name="email" >
                 </fieldset>
 
-                <h2>Procedencia</h2>
+                <h2 class="tit">Procedencia</h2>
                 <fieldset>
                     <label for="escuela">Escuela de procedencia:</label>
-                    <select id="escuela" name="escuela" class="form-select" aria-label="Default select example">
+                    <select id="escuela" name="escuela" class="form-select barra" aria-label="Default select example">
                         <option value="" selected>Elige una opcion</option>
                         <option value="CECyT 1 «Gonzalo Vázquez Vela» CDMX">CECyT 1 «Gonzalo Vázquez Vela» CDMX</option>
                         <option value="CECyT 2 «Miguel Bernard» CDMX">CECyT 2 «Miguel Bernard CDMX</option>
@@ -175,10 +176,10 @@
                         <option value="Otro">Otro</option>
                     </select>
                     <br><br>
-                    <input type="text" class="form-control" id="otro" name="otro" placeholder="Escribe el nombre de la escuela">
+                    <input type="text" class="form-control barra" id="otro" name="otro" placeholder="Escribe el nombre de la escuela">
 
                     <label for="entidad">Entidad Federativa de Procedencia:</label>  
-                    <select id="entidad" name="entidad" class="form-select" aria-label="Default select example">
+                    <select id="entidad" name="entidad" class="form-select barra" aria-label="Default select example">
                         <option value="" selected>Elige una opcion</option>
                         <option value="Aguascalientes">Aguascalientes</option>
                         <option value="Baja California">Baja California</option>
@@ -215,9 +216,9 @@
                     </select>
                     <br>
                     <label for="promedio">Promedio (considerando decimal):</label>
-                    <input type="number" class="form-control" id="promedio" name="promedio" step="0.01" min="6" max="10">
+                    <input type="number" class="form-control barra" id="promedio" name="promedio" step="0.01" min="6" max="10">
                     <label>ESCOM fue tu:</label>  
-                    <select id="opcion" name="opcion" class="form-select" aria-label="Default select example">
+                    <select id="opcion" name="opcion" class="form-select barra" aria-label="Default select example">
                         <option value="" selected>Elige una opción</option>
                         <option value="Aguascalientes">Primera opción</option>
                         <option value="Baja California">Segunda opción</option>
@@ -225,16 +226,16 @@
                     </select>
                 </fieldset>
 
-                <div class="botones">
-                    <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Registrar</button>
-                    <button type="submit" class="btn btn-primary" onclick="limpiarFormulario()">Limpiar</button>
+                <div class="botones sep">
+                    <button type="submit" class="btn btn-primary reglim" onclick="validarFormulario()">Registrar</button>
+                    <button type="submit" class="btn btn-primary reglim" onclick="limpiarFormulario()">Limpiar</button>
                 </div>
             </form>
 
-            <div class="col-8 p-5">
+            <div class="col-8 p-5  tableDat">
                 <table class="table">
                     <thead>
-                        <tr>
+                        <tr >
                         <th scope="col">Boleta</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellido paterno</th>
@@ -254,13 +255,13 @@
                         // Consulta para obtener todos los nombres y boletas de la tabla 'alumno'
                         $resultado = mysqli_query($enlace, "SELECT * FROM alumno");
                         while($datos = $resultado->fetch_object()){?>
-                            <tr>
-                                <td><?= $datos->boleta ?></td>
-                                <td><?= $datos->nombreAlu?></td>
-                                <td><?= $datos->apePatAlu?></td>
-                                <td><?= $datos->apeMatAlu?></td>
-                                <td><?= $datos->fechaNacAlu?></td>
-                                <td><?= $datos->curpAlu?></td>
+                            <tr >
+                                <td class="bdtext"><?= $datos->boleta ?></td>
+                                <td class="bdtext"><?= $datos->nombreAlu?></td>
+                                <td class="bdtext"><?= $datos->apePatAlu?></td>
+                                <td class="bdtext"><?= $datos->apeMatAlu?></td>
+                                <td class="bdtext"><?= $datos->fechaNacAlu?></td>
+                                <td class="bdtext"><?= $datos->curpAlu?></td>
                                 <td>
                                     <a href="modificar.php?boleta=<?=$datos->boleta?>" class="btn btn-small btn-warning" ><i class="fa-solid fa-pen-to-square"></i></a>
                                     <a href="eliminar.php?boleta=<?=$datos->boleta?>" class="btn btn-small btn-danger" ><i class="fa-solid fa-trash"></i></a>
@@ -277,40 +278,39 @@
 
 
 
-
-
-    <!-- <footer>
-        <div class="content">
-            <img src="../Img/Logo_Escom2.PNG" alt="Logo Image">
-            <div class="text-container">
-              <p>
-               INSTITUTO POLITECNICO NACIONAL
-              </p>
-                <p>
-                    ESCUELA SUPERIOR DE COMPUTO
-                    <br>
-                    REDES SOCIALES EN LA DERECHA
-                </p>
-            </div>
-            <div class="content2">
-                <div class="image-container4 menu-button" >
-                    <a href="https://www.facebook.com/groups/164168577040524" >
-                        <img src="../Img/facebookLogo.webp" alt="Facebook" class="imagefoot">
-                    </a>
-                </div>
-                <div class="image-container4 menu-button">
-                    <a href="https://twitter.com/escomunidad">
-                        <img src="../Img/x.avif" alt="X" class="imagefoot">
-                    </a>
-                </div>
-                <div class="image-container4 menu-button" >
-                    <a href="https://www.instagram.com/explore/locations/118110418347552/escom-ipn-mx/">
-                        <img src="../Img/instagramLogo.webp" alt="Instagram" class="imagefoot">
-                    </a>
-                </div>
-            </div>
+        <footer>
+    <div class="content">
+        <img src="../Img/Logo_Escom2.PNG" alt="Logo Image">
+        <div class="text-container">
+          <p>
+           INSTITUTO POLITECNICO NACIONAL
+          </p>
+            <p>
+                ESCUELA SUPERIOR DE COMPUTO
+                <br>
+                REDES SOCIALES EN LA DERECHA
+            </p>
         </div>
-    </footer> -->
+    </div> <!-- Agrega esta línea para cerrar la clase 'content' -->
+    <div class="content2">
+        <div class="image-container4 menu-button" >
+            <a href="https://www.facebook.com/groups/164168577040524" >
+                <img src="../Img/facebookLogo.webp" alt="Facebook" class="imagefoot">
+            </a>
+        </div>
+        <div class="image-container4 menu-button">
+            <a href="https://twitter.com/escomunidad">
+                <img src="../Img/x.avif" alt="X" class="imagefoot">
+            </a>
+        </div>
+        <div class="image-container4 menu-button" >
+            <a href="https://www.instagram.com/explore/locations/118110418347552/escom-ipn-mx/">
+                <img src="../Img/instagramLogo.webp" alt="Instagram" class="imagefoot">
+            </a>
+        </div>
+    </div>
+</footer>
+
 
     <script src="../js/scripts.js"></script>
     <script src="../bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>

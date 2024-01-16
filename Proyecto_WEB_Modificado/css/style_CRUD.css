@@ -1,0 +1,1122 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sep{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tableForm{
+    width: 600px;
+}
+
+.tableDat{
+    width: 150px;
+}
+
+
+
+/*PIE DE PAGINA*/
+    
+        /* Estilos para el pie de página */
+        footer {
+            
+            background-color: #8C3E69; /* Color de fondo del pie de página con transparencia */
+            font-size: 14px; /* Tamaño de fuente de 14px */
+            color: #ffffff; /* Color del texto en blanco */
+            width: 100%; /* Ancho del pie de página al 100% */
+            height: 90px; /* Altura del pie de página de 90px */
+            bottom: 0; /* Posicionar en la parte inferior */
+            border: 1px solid #8C3E69; /* Agregar un borde sólido de 1px en color blanco */
+            border-top-left-radius: 10px; /* Radio circular en la esquina superior izquierda */
+            border-top-right-radius: 10px; /* Radio circular en la esquina superior derecha */
+            border-bottom: 1px solid #8C3E69; /* Borde recto en la parte inferior */
+            height: auto;
+            display: flex; /* Utilizamos flexbox para organizar los elementos dentro del footer */
+            justify-content: space-between; /* Distribuir los elementos de forma equitativa */
+            align-items: center; /* Alinear los elementos verticalmente al centro */
+            padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+            position:sticky;
+        
+        }
+    
+        /* Estilos para el contenido del pie de página */
+        footer .content {
+           
+            display: flex; /* Mostrar los elementos como flexbox */ /* organiza elementos dentro de un contenedor de una manera flexible y dinámica*/
+            align-items: center; /* Alinear verticalmente el contenido */
+        }
+    
+        footer .content2 {
+            position: absolute; /* Cambiar a posición absoluta */
+            display: flex;
+            align-items: center;
+            bottom: 15px; /* Alinear en la parte inferior del pie de página con un pequeño margen */
+            right: 15px;
+        }
+    
+        /* Estilos para la imagen del pie de página */
+        footer img {
+            width: 85px; /* Ancho de la imagen */
+            height: 85px; /* Altura de la imagen */
+            align-items: center; /* Alineación de los elementos al centro */
+        }
+    
+        /* Estilos para el contenedor del texto en el pie de página */
+        footer .text-container {
+            display: flex; /* Mostrar los elementos como flexbox */
+            flex-direction: column; /* Organizar el contenido en una columna */
+            justify-content: center; /* Alinear verticalmente el texto al centro */
+        }
+    
+        footer a {
+            color: #ffffff; /* Color del texto en blanco */
+            margin: 0; /* Margen de 0 para eliminar espacios innecesarios */
+            text-decoration: underline; /* Subrayar el enlace */
+            text-align: left;
+        }
+    
+        footer p {
+            margin: 0; /* Margen de 0 para eliminar espacios innecesarios */
+        }
+    
+        /* Estilos para las imágenes en el pie de página */
+        .imagefoot {
+            align-items: center; /* Alineación de los elementos al centro */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            justify-content: flex-end; /* Alinear todos los elementos a la derecha */
+            padding: 5px; /* Espaciado interno de 5px */
+            border-radius: 30px; /* Radio de curvatura para los bordes de la imagen */
+        }
+    
+        /* Estilos para las imágenes del las imagenes del foot  */
+        .image-container4 {
+            position: relative; /* Posición relativa para el contenedor de la imagen */
+            display: inline-block; /* Mostrar como un bloque en línea */
+            transition: transform 0.3s ease-in-out; /* Transición para suavizar el efecto al resaltar la imagen */
+        }
+        
+        .image-container4 img {
+            display: block; /* Mostrar la imagen como un bloque */
+            border-radius: auto; /* Opcional: agregar bordes redondeados a la imagen */
+            object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+        }
+        
+        .image-container4.center {
+            transform: scale(1.15); /* Aumentar el tamaño de la imagen en 15% */
+            z-index: 1; /* Asegurar que la imagen resaltada esté encima de las demás */
+            cursor: pointer; /* Cambiar el cursor a una mano para indicar que es clickeable */
+        }
+
+@media (max-width: 325px) {
+    /* dispositivos móviles pequeños */
+    footer{
+        padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  40px; /* Ancho de la imagen en "em" */
+        height: 40px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 5px;
+    }
+    
+    footer p {
+        font-size: 6px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 5px;
+        
+
+    }
+
+    .imagefoot {
+        width: 25px;
+        height: 25px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+    
+
+    .tooltip::before {
+       
+        font-size: 7px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+    .tableForm{
+        width: 300px;
+        font-size: 6px;
+        margin: center;
+    
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: -55px;
+    margin-top: -110px;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 5.5px;
+    padding-right: 2px;
+    padding-left: 2px;
+
+}
+
+.tableDat th{
+    font-size: 5.5px;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 2px 4px;
+    font-size: 9px;
+}
+
+.tableDat td.bdtext {
+    font-size: 5.5px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+
+
+
+    .barra{
+        width: 90px;
+        height: 10px;
+        font-size: 8px;
+        margin-left: 5px;
+        
+    }
+
+    select.barra {
+        font-size: 7px; /* Puedes ajustar el valor según tus preferencias */
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 1px;
+    }
+
+    .ball{
+       margin-top:-3px;
+    }
+
+    .square{
+        width: 10px;
+        height: 10px;
+        margin-top:-2px;
+    }
+    
+    .tit{
+        font-size: 15px;
+    }
+
+    .reglim{
+        width:56px;
+        height: 30px;
+        font-size: 8px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+  
+  /* Media query para teléfonos móviles */
+  @media (min-width: 326px) and (max-width: 509px) {
+    footer{
+        padding: 5px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  50px; /* Ancho de la imagen en "em" */
+        height: 50px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 9px;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 10px;
+    }
+
+    .imagefoot {
+        width: 30px;
+        height: 30px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+
+    .tooltip::before {
+       
+        font-size: 12px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+/*inicio de pagina*/
+
+.tit{
+    font-size: 20px;
+}
+    .tableForm{
+        width: 380px;
+        font-size: 9px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 200px;
+        height: 16px;
+        font-size: 10px;
+        margin-left: 5px;
+        
+    }
+
+    select.barra {
+        font-size: 10px;
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 1px;
+    }
+
+    .ball{
+       margin-top: 0px;
+    }
+
+    .square{
+        width: 12px;
+        height: 12px;
+        margin-top:0px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: -51px;
+    margin-top: -110px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 7px;
+    padding-right: 4px;
+    padding-left: 4px;
+
+}
+
+.tableDat th{
+    font-size: 7px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 3px 4px;
+    font-size: 9px;
+}
+
+.tableDat td.bdtext {
+    font-size: 7px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:66px;
+        height: 40px;
+        font-size: 9px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        margin-bottom: 30px;
+    }
+
+  
+}
+  
+  /* Media query para tablets y dispositivos pequeños */
+  @media (min-width: 510px) and (max-width: 670px) {
+    footer{
+        padding: 4px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  70px; /* Ancho de la imagen en "em" */
+        height: 70px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+    
+    footer p {
+        font-size: 13px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 15px;
+    }
+
+    .imagefoot {
+        width: 40px;
+        height: 40px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+    
+    .tooltip::before {
+       
+        font-size: 13px; /* Tamaño de fuente del tooltip */
+    }
+
+/*inicio de pagina*/
+
+.tit{
+    font-size: 25px;
+}
+    .tableForm{
+        width: 420px;
+        font-size: 13px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 250px;
+        height: 20px;
+        font-size: 12px;
+        margin-left: 5px;
+        
+    }
+
+    select.barra {
+        font-size: 12px; 
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 1px;
+    }
+
+    .ball{
+       margin-top: 0px;
+    }
+
+    .square{
+        width: 12px;
+        height: 12px;
+        margin-top:0px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: -21px;
+    margin-top: -110px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+.tableDat th{
+    font-size: 10px;
+    text-align: center;
+    padding-right: 6px;
+    padding-left: 6px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 3px 4px;
+    font-size: 9px;
+}
+
+.tableDat td.bdtext {
+    font-size: 10px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:76px;
+        height: 50px;
+        font-size: 13px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        margin-bottom: 30px;
+    }
+
+  }
+  
+  /* Media query para tablets y dispositivos medianos */
+  @media (min-width: 671px) and (max-width: 790px) {
+    footer a {
+        font-size: 1.1em;
+        margin-top: 2px;
+    }
+    
+    footer p {
+        font-size: .9em;
+    }
+
+    footer img {
+        width: 5.3em; /* Ancho de la imagen en "em" */
+        height: 5.3em; /* Altura de la imagen en "em" */
+       
+    }
+    .imagefoot {
+        width: 3.5em; /* Ancho de la imagen en "em" */
+        height: 3.5em; /* Altura de la imagen en "em" */
+        align-items: center; /* Alineación de los elementos al centro */
+        
+    }
+    
+    
+    .tooltip::before {
+       
+        font-size: 18px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+    /*inicio de pagina*/
+
+.tit{
+    font-size: 35px;
+}
+    .tableForm{
+        width: 670px;
+        font-size: 21px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 450px;
+        height: 25px;
+        font-size: 20px;
+        margin-left: 5px;
+        
+    }
+    select.barra {
+        font-size: 15px; 
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 0px;
+    }
+
+    .ball{
+       margin-top: 9px;
+    }
+
+    .square{
+        width: 17px;
+        height: 17px;
+        margin-top:7px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: -21px;
+    margin-top: -110px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 17px;
+    padding-right: 6px;
+    padding-left: 6px;
+
+}
+
+.tableDat th{
+    font-size: 17px;
+    text-align: center;
+    padding-right: 7px;
+    padding-left: 7px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 5px 7px;
+    font-size: 14px;
+}
+
+.tableDat td.bdtext {
+    font-size: 17px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:96px;
+        height: 80px;
+        font-size: 17px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        margin-bottom: 40px;
+    }
+
+  }
+  
+  /* Media query para escritorios y pantallas grandes */
+  @media (min-width: 791px) and (max-width: 915px) {
+    footer{
+        padding: 4px; /* Agrega un espacio interno para separar los elementos del borde del footer */
+         
+    }
+
+    footer img {
+        width:  90px; /* Ancho de la imagen en "em" */
+        height: 90px; /* Altura de la imagen en "em" */
+       
+    }
+
+    footer a {
+        font-size: 19px;
+    }
+    
+    footer p {
+        font-size: 20px;
+    }
+
+    footer .content2 {
+        position: absolute; /* Cambiar a posición absoluta */
+        display: flex;
+        align-items: center;
+        bottom: 15px;
+    }
+
+    .imagefoot {
+        width: 60px;
+        height: 60px;
+        align-items: center; /* Alineación de los elementos al centro */
+        margin-bottom: 0%;
+        margin-right: 0px;
+        
+    }
+  
+    .tooltip::before {
+       
+        font-size: 22px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+        /*inicio de pagina*/
+
+.tit{
+    font-size: 35px;
+}
+    .tableForm{
+        width: 730px;
+        font-size: 22px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 470px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 5px;
+        
+    }
+    select.barra {
+        font-size: 12px; 
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 0px;
+    }
+
+    .ball{
+       margin-top: 9px;
+    }
+
+    .square{
+        width: 20px;
+        height: 20px;
+        margin-top:7px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: -21px;
+    margin-top: -110px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 17px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+}
+
+.tableDat th{
+    font-size: 17px;
+    text-align: center;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 5px 7px;
+    font-size: 14px;
+}
+
+.tableDat td.bdtext {
+    font-size: 17px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:96px;
+        height: 80px;
+        font-size: 17px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        margin-bottom: 40px;
+    }
+
+
+
+  }
+
+  @media (min-width: 916px) and (max-width: 1100px) {
+    footer {
+        position:fixed;
+    }
+    footer a {
+        font-size: 1.1em;
+        margin-top: 0px;
+    }
+
+    
+    footer p {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 5.3em; /* Ancho de la imagen en "em" */
+        height: 5.3em; /* Altura de la imagen en "em" */
+       
+    }
+    .imagefoot {
+        width: 3.5em; /* Ancho de la imagen en "em" */
+        height: 3.5em; /* Altura de la imagen en "em" */
+        padding-bottom: .01px;
+        
+    }
+    
+    .tooltip::before {
+       
+        font-size: 15px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+     /*inicio de pagina*/
+
+.tit{
+    font-size: 40px;
+}
+    .tableForm{
+        width: 830px;
+        font-size: 27px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 500px;
+        height: 40px;
+        font-size: 26px;
+        margin-left: 5px;
+        
+    }
+
+    select.barra {
+        font-size: 12px; 
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 0px;
+    }
+
+    .ball{
+       margin-top: 9px;
+       width: 30px;
+        height: 30px;
+    }
+
+    .square{
+        width: 30px;
+        height: 30px;
+        margin-top:7px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: -18px;
+    margin-top: -110px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 22px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+}
+
+.tableDat th{
+    font-size: 22px;
+    text-align: center;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 8px 9px;
+    font-size: 14px;
+}
+
+.tableDat td.bdtext {
+    font-size: 22px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:96px;
+        height: 80px;
+        font-size: 17px;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+
+    footer {
+        position:fixed;
+    }
+    footer a {
+        font-size: 1.1em;
+        margin-top: 0px;
+    }
+
+    
+    footer p {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 5.3em; /* Ancho de la imagen en "em" */
+        height: 5.3em; /* Altura de la imagen en "em" */
+       
+    }
+    .imagefoot {
+        width: 3.5em; /* Ancho de la imagen en "em" */
+        height: 3.5em; /* Altura de la imagen en "em" */
+        padding-bottom: .01px;
+        
+    }
+    
+    .tooltip::before {
+       
+        font-size: 15px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+     /*inicio de pagina*/
+
+.tit{
+    font-size: 35px;
+}
+    .tableForm{
+        width: 430px;
+        font-size: 22px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 470px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 5px;
+        
+    }
+
+    select.barra {
+        font-size: 12px; 
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 0px;
+    }
+
+    .ball{
+       margin-top: 9px;
+    }
+
+    .square{
+        width: 20px;
+        height: 20px;
+        margin-top:7px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: 80px;
+    margin-top: -10px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 16px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+}
+
+.tableDat th{
+    font-size: 16px;
+    text-align: center;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 5px 7px;
+    font-size: 14px;
+}
+
+.tableDat td.bdtext {
+    font-size: 16px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:66px;
+        height: 50px;
+        font-size: 14px;
+        padding-left: 3px;
+        margin-bottom: 15px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 6300px) {
+
+    footer {
+        position:fixed;
+    }
+    footer a {
+        font-size: 1.1em;
+        margin-top: 0px;
+    }
+
+    
+    footer p {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 5.3em; /* Ancho de la imagen en "em" */
+        height: 5.3em; /* Altura de la imagen en "em" */
+       
+    }
+    .imagefoot {
+        width: 3.5em; /* Ancho de la imagen en "em" */
+        height: 3.5em; /* Altura de la imagen en "em" */
+        padding-bottom: .01px;
+        
+    }
+    
+    .tooltip::before {
+       
+        font-size: 15px; /* Tamaño de fuente del tooltip en "em" */
+    }
+
+     /*inicio de pagina*/
+
+.tit{
+    font-size: 35px;
+}
+    .tableForm{
+        width: 430px;
+        font-size: 22px;
+        margin: center;
+    
+    }
+
+    .barra{
+        width: 570px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 5px;
+        
+    }
+    select.barra {
+        font-size: 12px; 
+    }
+
+    .opt{
+        align-items: center;
+        margin-left: 16px;
+        margin-bottom:5px;
+        margin-top: 0px;
+    }
+
+    .ball{
+       margin-top: 9px;
+    }
+
+    .square{
+        width: 20px;
+        height: 20px;
+        margin-top:7px;
+    }
+    
+/* Estilos para la tabla */
+
+
+.tableDat table{
+    margin-left: 200px;
+    margin-top: -10px;
+    text-align: center;
+
+}
+
+/* Estilos para las celdas del encabezado y cuerpo */
+.tableDat td {
+    font-size: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+
+.tableDat th{
+    font-size: 16px;
+    text-align: center;
+    padding-right: 9px;
+    padding-left: 9px;
+
+}
+
+
+/* Estilos para los botones en las celdas */
+.tableDat .btn {
+    padding: 5px 7px;
+    font-size: 14px;
+}
+
+.tableDat td.bdtext {
+    font-size: 16px; /* Tamaño de fuente para celdas con texto largo */
+}
+
+    .reglim{
+        width:86px;
+        height: 60px;
+        font-size: 14px;
+        text-align: center;
+       margin-bottom: 60px;
+
+    }
+   
+}
