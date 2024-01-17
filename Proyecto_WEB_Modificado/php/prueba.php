@@ -32,7 +32,7 @@
         </h1>
     </div> -->
 
-    <div class="container-fluid row tdo ">
+    <div class="container-fluid row  ">
             <form class="col-4 p-3 tableForm" id="registroForm" method="POST" onsubmit="return validarFormulario()">
                 <h2 class="tit">Identidad</h2>
                 <fieldset class="Identidad"> 
@@ -121,7 +121,7 @@
                     <label for="colonia">Colonia:</label>
                     <input type="text" class="form-control barra" id="colonia" name="colonia" >
                     <label for="">Alcadía:</label>
-                    <select class="form-select barra" aria-label="Default select example">
+                    <select class="form-select baropt" aria-label="Default select example">
                         <option selected>Elige una opcion</option>
                         <option value="1">Álvaro Obregón</option>
                         <option value="2">Azcapotzalco</option>
@@ -152,7 +152,7 @@
                 <h2 class="tit">Procedencia</h2>
                 <fieldset>
                     <label for="escuela">Escuela de procedencia:</label>
-                    <select id="escuela" name="escuela" class="form-select barra" aria-label="Default select example">
+                    <select id="escuela" name="escuela" class="form-select baropt" aria-label="Default select example">
                         <option value="" selected>Elige una opcion</option>
                         <option value="CECyT 1 «Gonzalo Vázquez Vela» CDMX">CECyT 1 «Gonzalo Vázquez Vela» CDMX</option>
                         <option value="CECyT 2 «Miguel Bernard» CDMX">CECyT 2 «Miguel Bernard CDMX</option>
@@ -179,7 +179,7 @@
                     <input type="text" class="form-control barra" id="otro" name="otro" placeholder="Escribe el nombre de la escuela">
 
                     <label for="entidad">Entidad Federativa de Procedencia:</label>  
-                    <select id="entidad" name="entidad" class="form-select barra" aria-label="Default select example">
+                    <select id="entidad" name="entidad" class="form-select baropt" aria-label="Default select example">
                         <option value="" selected>Elige una opcion</option>
                         <option value="Aguascalientes">Aguascalientes</option>
                         <option value="Baja California">Baja California</option>
@@ -218,7 +218,7 @@
                     <label for="promedio">Promedio (considerando decimal):</label>
                     <input type="number" class="form-control barra" id="promedio" name="promedio" step="0.01" min="6" max="10">
                     <label>ESCOM fue tu:</label>  
-                    <select id="opcion" name="opcion" class="form-select barra" aria-label="Default select example">
+                    <select id="opcion" name="opcion" class="form-select baropt" aria-label="Default select example">
                         <option value="" selected>Elige una opción</option>
                         <option value="Aguascalientes">Primera opción</option>
                         <option value="Baja California">Segunda opción</option>
@@ -232,7 +232,7 @@
                 </div>
             </form>
 
-            <div class="col-8 p-5  tableDat">
+            <div class="col-8 p-5  tableDat sep3">
                 <table class="table">
                     <thead>
                         <tr >
@@ -255,7 +255,7 @@
                         // Consulta para obtener todos los nombres y boletas de la tabla 'alumno'
                         $resultado = mysqli_query($enlace, "SELECT * FROM alumno");
                         while($datos = $resultado->fetch_object()){?>
-                            <tr >
+                            <tr>
                                 <td class="bdtext"><?= $datos->boleta ?></td>
                                 <td class="bdtext"><?= $datos->nombreAlu?></td>
                                 <td class="bdtext"><?= $datos->apePatAlu?></td>

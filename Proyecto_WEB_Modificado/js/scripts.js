@@ -254,3 +254,17 @@ function realizarAccion(accion) {
       }
   });
 }
+
+//delete
+
+document.addEventListener('DOMContentLoaded', function() {
+  const centerText = document.querySelector('.centerText'); // Cambiado a .querySelector('.centerText')
+
+  // Cambia el tamaño del texto al cargar la página
+  centerText.style.fontSize = '90px'; // Cambiado a '90px' en lugar de '90em'
+
+  // Vuelve al tamaño original después de un tiempo
+  setTimeout(function() {
+    centerText.style.fontSize = '25px'; // Cambiado a '25px' en lugar de '1em'
+  }, 2000); // Ajusta el tiempo de espera según sea necesario
+});
