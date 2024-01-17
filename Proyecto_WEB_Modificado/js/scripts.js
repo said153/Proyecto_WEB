@@ -127,8 +127,8 @@ function validarFormulario() {
     Event.preventDefault(); 
   } 
   else {
-  alert("Tus datos fueron registrados correctamente.");
-  
+    alert("Se han registrado correctamente tus datos.\nVe hacia la parte superior de la página y clickea cualquier logo para volver al inicio");
+
   return true;
   }
 
